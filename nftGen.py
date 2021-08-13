@@ -1,18 +1,18 @@
 import os, sys
 import random
 from PIL import Image
-from drawType import drawSolanaBackground, drawType
-from drawBody import drawBody
-from drawNeck import drawNeck
-from drawHat import drawHat
-from drawEyes import drawEyes
-from drawMouth import drawMouth
+from draw.drawType import drawSolanaBackground, drawType
+from draw.drawBody import drawBody
+from draw.drawNeck import drawNeck
+from draw.drawHat import drawHat
+from draw.drawEyes import drawEyes
+from draw.drawMouth import drawMouth
 
 def main():
     traitsDict = buildTraitsDict()
     random.seed(5333)
 
-    makeNewImage(13370, "n_g_c_")
+    makeNewImage(13370, "no___b")
 
     dogeId = 1
     while len(traitsDict["type"]) > 0:
@@ -42,12 +42,12 @@ def makeNewImage(iter, traits):
 
 def buildTraitsDict():
     traitsDict = {
-        "type": ["n", "l", "d", "b", "r", "k"], 
-        "body": ["p", "w", "l", "c", "_", "_"], 
-        "neck": ["b", "b", "r", "g", "_", "_"], 
-        "mouth": ["b", "_", "_", "_", "_", "_"], 
-        "eyes": ["p", "c", "_", "_", "_", "_"], 
-        "hat": ["p", "_", "_", "_", "_", "_"]
+        "type": ["n", "l", "d", "b", "r", "k", "n"], 
+        "body": ["p", "w", "l", "c", "i", "k", "o"], 
+        "neck": ["b", "b", "r", "g", "_", "_", "_"], 
+        "mouth": ["b", "t", "_", "_", "_", "_", "_"], 
+        "eyes": ["p", "c", "a", "_", "_", "_", "_"], 
+        "hat": ["p", "b", "_", "_", "_", "_", "_"]
     }
 
     # Check that all entries are equal, else fail

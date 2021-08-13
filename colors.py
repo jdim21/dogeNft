@@ -42,11 +42,20 @@ colorsDict = {
     "lime": (181, 230, 29),
     "limeShade": (166, 213, 23),
 
+    "orange": (255, 127, 39),
+    "orangeShade": (251, 100, 0),
+    "gokuBlue": (0, 0, 236),
+
     "vice": (43, 240, 231),
     "viceShade": (16, 209, 200),
     "viceFlower": (255, 98, 149),
+
+    "clover": (0, 168, 0),
+    "cloverSecondary": (181, 230, 29),
     
     "whiteShade": (200, 191, 231),
+
+    "diaperStrap": (83, 117, 255),
 
     "tongue": (255, 174, 201),
     "bone": (223, 223, 223),

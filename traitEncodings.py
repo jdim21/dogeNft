@@ -13,6 +13,9 @@ TRAIT_ENCODINGS = {
         "l": "Lime Shirt",
         "w": "White Shirt",
         "c": "Vice Shirt",
+        "k": "Lucky Shirt",
+        "o": "Goku Shirt",
+        "i": "Diaper",
         "_": "None"
     },
     "neck": {
@@ -23,15 +26,18 @@ TRAIT_ENCODINGS = {
     },
     "mouth": {
         "b": "Bone",
+        "t": "Tongue Out",
         "_": "None"
     },
     "eyes": {
         "p": "Pit Vipers",
         "c": "Vice Shades",
+        "a": "Angry Eyebrows",
         "_": "None"
     },
     "hat": {
         "p": "Party Hat",
+        "b": "Blue Bandana",
         "_": "None"
     }
 }

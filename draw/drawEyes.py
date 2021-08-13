@@ -101,4 +101,12 @@ def drawEyes(im, trait):
         imNew.putpixel((16, 13), colorsDict["black"])
         imNew.putpixel((17, 13), colorsDict["black"])
 
+    elif decodedType == "Angry Eyebrows":
+
+        imNew.putpixel((9, 10), colorsDict["black"])
+        imNew.putpixel((14, 10), colorsDict["black"])
+
+        imNew.putpixel((10, 11), colorsDict["black"])
+        imNew.putpixel((13, 11), colorsDict["black"])
+
     im.paste(imNew, (0,0), mask=imNew)

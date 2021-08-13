@@ -1,7 +1,7 @@
 from PIL import Image
 from colors import colorsDict
 from traitEncodings import TRAIT_ENCODINGS
-from drawBaseType import drawBaseType
+from draw.drawBaseType import drawBaseType
 
 def drawSolanaBackground(im):
     for i in range(24):

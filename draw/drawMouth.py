@@ -73,4 +73,12 @@ def drawMouth(im, trait):
         imNew.putpixel((19, 21), colorsDict["black"])
         imNew.putpixel((20, 21), colorsDict["black"])
 
+    elif decodedType == "Tongue Out":
+        imNew.putpixel((11, 16), colorsDict["tongue"])
+        imNew.putpixel((12, 16), colorsDict["tongue"])
+        imNew.putpixel((11, 17), colorsDict["tongue"])
+        imNew.putpixel((12, 17), colorsDict["tongue"])
+        imNew.putpixel((11, 18), colorsDict["tongue"])
+        imNew.putpixel((12, 18), colorsDict["tongue"])
+
     im.paste(imNew, (0,0), mask=imNew)
