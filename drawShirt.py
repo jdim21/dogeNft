@@ -1,6 +1,6 @@
 from PIL import Image
 from colors import colorsDict
-from traitEncodings import TR_EN
+from traitEncodings import TRAIT_ENCODINGS
 
 def drawShirt(im, color):
     imNew = Image.new('RGBA', (24, 24), (0, 0, 0, 0))
@@ -13,6 +13,12 @@ def drawShirt(im, color):
     elif color == "lime":
         primaryColor = "lime"
         shadeColor = "limeShade"
+    elif color == "white":
+        primaryColor = "white"
+        shadeColor = "whiteShade"
+    elif color == "vice":
+        primaryColor = "vice"
+        shadeColor = "viceShade"
     imNew.putpixel((6, 19), colorsDict["black"])
     imNew.putpixel((7, 19), colorsDict[shadeColor])
     imNew.putpixel((8, 19), colorsDict[primaryColor])
