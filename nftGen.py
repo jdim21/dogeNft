@@ -12,7 +12,7 @@ def main():
     traitsDict = buildTraitsDict()
     random.seed(5333)
 
-    makeNewImage(13370, "no___b")
+    makeNewImage(13370, "ns____")
 
     dogeId = 1
     while len(traitsDict["type"]) > 0:
@@ -29,8 +29,8 @@ def makeNewImage(iter, traits):
     drawBody(im, traits[1])
     drawNeck(im, traits[2])
     drawMouth(im, traits[3])
-    drawEyes(im, traits[4])
-    drawHat(im, traits[5])
+    drawHat(im, traits[4])
+    drawEyes(im, traits[5])
     #smallFileName = "images/" + str(iter) + "." + l1 + l2 + l3 + ".png"
     #im.save(smallFileName, "PNG")
     
@@ -42,12 +42,12 @@ def makeNewImage(iter, traits):
 
 def buildTraitsDict():
     traitsDict = {
-        "type": ["n", "l", "d", "b", "r", "k", "n"], 
-        "body": ["p", "w", "l", "c", "i", "k", "o"], 
-        "neck": ["b", "b", "r", "g", "_", "_", "_"], 
-        "mouth": ["b", "t", "_", "_", "_", "_", "_"], 
-        "eyes": ["p", "c", "a", "_", "_", "_", "_"], 
-        "hat": ["p", "b", "_", "_", "_", "_", "_"]
+        "type": ["n", "l", "d", "b", "r", "k", "n", "v", "z", "n", "n", "n"], 
+        "body": ["p", "w", "l", "c", "i", "k", "o", "s", "n", "_", "_", "_"], 
+        "neck": ["b", "r", "g", "c", "_", "_", "_", "_", "_", "_", "_", "_"], 
+        "mouth": ["b", "t", "j", "_", "_", "_", "_", "_", "_", "_", "_", "_"], 
+        "hat": ["p", "b", "r", "g", "w", "m", "_", "_", "_", "_", "_", "_"],
+        "eyes": ["p", "c", "a", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
     }
 
     # Check that all entries are equal, else fail
@@ -61,7 +61,7 @@ def buildTraitsDict():
 
 def makeTraitsRoll(traitsDict):
     traitStr = ""
-    for trait in ["type", "body", "neck", "mouth", "eyes", "hat"]:
+    for trait in ["type", "body", "neck", "mouth", "hat", "eyes"]:
         roll = random.choice(traitsDict[trait])
         traitsDict[trait].remove(roll)
         traitStr = traitStr + roll

@@ -2,7 +2,7 @@ from PIL import Image
 from colors import colorsDict
 from traitEncodings import TRAIT_ENCODINGS
 
-def drawBaseType(im, colorPrimary, colorShade, colorLight):
+def drawBaseType(im, colorPrimary, colorShade, colorLight, colorBrows):
     imNew = Image.new('RGBA', (24, 24), (0, 0, 0, 0))
 
     imNew.putpixel((6, 5), colorsDict["black"])
@@ -61,14 +61,14 @@ def drawBaseType(im, colorPrimary, colorShade, colorLight):
     imNew.putpixel((5, 10), colorsDict["black"])
     imNew.putpixel((6, 10), colorsDict["black"])
     imNew.putpixel((7, 10), colorsDict[colorPrimary])
-    imNew.putpixel((8, 10), colorsDict["white"])
+    imNew.putpixel((8, 10), colorsDict[colorBrows])
     imNew.putpixel((9, 10), colorsDict[colorPrimary])
     imNew.putpixel((10, 10), colorsDict[colorPrimary])
     imNew.putpixel((11, 10), colorsDict[colorPrimary])
     imNew.putpixel((12, 10), colorsDict[colorPrimary])
     imNew.putpixel((13, 10), colorsDict[colorPrimary])
     imNew.putpixel((14, 10), colorsDict[colorPrimary])
-    imNew.putpixel((15, 10), colorsDict["white"])
+    imNew.putpixel((15, 10), colorsDict[colorBrows])
     imNew.putpixel((16, 10), colorsDict[colorPrimary])
     imNew.putpixel((17, 10), colorsDict["black"])
     imNew.putpixel((18, 10), colorsDict["black"])

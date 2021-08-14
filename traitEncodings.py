@@ -6,6 +6,8 @@ TRAIT_ENCODINGS = {
         "b": "Brown",
         "r": "Dark Brown",
         "k": "Black",
+        "z": "Zombie",
+        "v": "Devil",
         "_": "None"
     },
     "body": {
@@ -16,10 +18,13 @@ TRAIT_ENCODINGS = {
         "k": "Lucky Shirt",
         "o": "Goku Shirt",
         "i": "Diaper",
+        "s": "Black Suit",
+        "n": "Navy Suit",
         "_": "None"
     },
     "neck": {
         "b": "Blue Collar",
+        "c": "Red Collar",
         "r": "Purple Bowtie",
         "g": "Green Bowtie",
         "_": "None"
@@ -27,17 +32,22 @@ TRAIT_ENCODINGS = {
     "mouth": {
         "b": "Bone",
         "t": "Tongue Out",
+        "j": "Joint",
+        "_": "None"
+    },
+    "hat": {
+        "p": "Party Hat",
+        "b": "Blue Bandana",
+        "r": "Red Tophat",
+        "g": "Green Tophat",
+        "w": "White Tophat",
+        "m": "Pink Mohawk",
         "_": "None"
     },
     "eyes": {
         "p": "Pit Vipers",
         "c": "Vice Shades",
         "a": "Angry Eyebrows",
-        "_": "None"
-    },
-    "hat": {
-        "p": "Party Hat",
-        "b": "Blue Bandana",
         "_": "None"
     }
 }

@@ -81,4 +81,43 @@ def drawMouth(im, trait):
         imNew.putpixel((11, 18), colorsDict["tongue"])
         imNew.putpixel((12, 18), colorsDict["tongue"])
 
+    elif decodedType == "Joint":
+        imNew.putpixel((20, 11), colorsDict["jointSmoke"])
+        imNew.putpixel((21, 11), colorsDict["jointSmoke"])
+        imNew.putpixel((22, 11), colorsDict["jointSmoke"])
+
+        imNew.putpixel((8, 12), colorsDict["jointEyes"])
+        imNew.putpixel((14, 12), colorsDict["jointEyes"])
+
+        imNew.putpixel((21, 12), colorsDict["jointSmoke"])
+
+        imNew.putpixel((21, 14), colorsDict["jointSmoke"])
+
+        imNew.putpixel((11, 16), colorsDict["black"])
+        imNew.putpixel((12, 16), colorsDict["joint"])
+        imNew.putpixel((13, 16), colorsDict["black"])
+        imNew.putpixel((21, 16), colorsDict["jointSmoke"])
+
+        imNew.putpixel((11, 17), colorsDict["black"])
+        imNew.putpixel((12, 17), colorsDict["black"])
+        imNew.putpixel((13, 17), colorsDict["joint"])
+        imNew.putpixel((14, 17), colorsDict["black"])
+
+        imNew.putpixel((13, 18), colorsDict["black"])
+        imNew.putpixel((14, 18), colorsDict["joint"])
+        imNew.putpixel((15, 18), colorsDict["black"])
+        imNew.putpixel((16, 18), colorsDict["black"])
+        imNew.putpixel((17, 18), colorsDict["black"])
+        imNew.putpixel((20, 18), colorsDict["jointSmoke"])
+
+        imNew.putpixel((14, 19), colorsDict["black"])
+        imNew.putpixel((15, 19), colorsDict["joint"])
+        imNew.putpixel((16, 19), colorsDict["jointBurn"])
+        imNew.putpixel((17, 19), colorsDict["black"])
+        imNew.putpixel((19, 19), colorsDict["jointSmoke"])
+
+        imNew.putpixel((15, 20), colorsDict["black"])
+        imNew.putpixel((16, 20), colorsDict["black"])
+        imNew.putpixel((17, 20), colorsDict["black"])
+
     im.paste(imNew, (0,0), mask=imNew)

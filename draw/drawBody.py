@@ -2,6 +2,7 @@ from PIL import Image
 from colors import colorsDict
 from traitEncodings import TRAIT_ENCODINGS
 from draw.drawShirt import drawShirt
+from draw.drawSuit import drawSuit
 
 def drawBody(im, trait):
     imNew = Image.new('RGBA', (24, 24), (0, 0, 0, 0))
@@ -15,17 +16,24 @@ def drawBody(im, trait):
         drawShirt(im, "white")
     elif decodedType == "Lucky Shirt":
         drawShirt(im, "white")
+        imNew.putpixel((6, 20), colorsDict["clover"])
+        imNew.putpixel((8, 20), colorsDict["clover"])
+
+        imNew.putpixel((5, 21), colorsDict["clover"])
         imNew.putpixel((6, 21), colorsDict["clover"])
         imNew.putpixel((7, 21), colorsDict["cloverSecondary"])
         imNew.putpixel((8, 21), colorsDict["clover"])
+        imNew.putpixel((9, 21), colorsDict["clover"])
 
         imNew.putpixel((6, 22), colorsDict["cloverSecondary"])
         imNew.putpixel((7, 22), colorsDict["clover"])
         imNew.putpixel((8, 22), colorsDict["cloverSecondary"])
 
+        imNew.putpixel((5, 23), colorsDict["clover"])
         imNew.putpixel((6, 23), colorsDict["clover"])
         imNew.putpixel((7, 23), colorsDict["cloverSecondary"])
         imNew.putpixel((8, 23), colorsDict["clover"])
+        imNew.putpixel((9, 23), colorsDict["clover"])
     elif decodedType == "Goku Shirt":
         drawShirt(im, "goku")
         imNew.putpixel((9, 20), colorsDict["gokuBlue"])
@@ -78,5 +86,15 @@ def drawBody(im, trait):
         imNew.putpixel((7, 23), colorsDict["white"])
         imNew.putpixel((8, 23), colorsDict["white"])
         imNew.putpixel((9, 23), colorsDict["black"])
+    elif decodedType == "Black Suit":
+        primaryColor = colorsDict["blackSuit"]
+        primaryColorShade = colorsDict["blackSuitShade"]
+        tieColor = colorsDict["blackSuitTie"]
+        drawSuit(imNew, primaryColor, primaryColorShade, tieColor)
+    elif decodedType == "Navy Suit":
+        primaryColor = colorsDict["navySuit"]
+        primaryColorShade = colorsDict["navySuitShade"]
+        tieColor = colorsDict["navySuitTie"]
+        drawSuit(imNew, primaryColor, primaryColorShade, tieColor)
 
     im.paste(imNew, (0,0), mask=imNew)
