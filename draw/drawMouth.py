@@ -82,6 +82,12 @@ def drawMouth(im, trait):
         imNew.putpixel((12, 18), colorsDict["tongue"])
 
     elif decodedType == "Joint":
+        imNew.putpixel((21, 9), colorsDict["jointSmoke"])
+
+        imNew.putpixel((20, 10), colorsDict["jointSmoke"])
+        imNew.putpixel((21, 10), colorsDict["jointSmoke"])
+        imNew.putpixel((22, 10), colorsDict["jointSmoke"])
+
         imNew.putpixel((20, 11), colorsDict["jointSmoke"])
         imNew.putpixel((21, 11), colorsDict["jointSmoke"])
         imNew.putpixel((22, 11), colorsDict["jointSmoke"])

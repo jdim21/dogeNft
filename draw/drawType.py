@@ -48,6 +48,21 @@ def drawType(im, trait):
         colorLight = "typeBlackLight"
         colorBrow = "typeBlackBrows"
         drawBaseType(im, primaryColor, colorShade, colorLight, colorBrow)
+    elif decodedType == "Alien":
+        primaryColor = "typeAlien"
+        colorShade = "typeAlienShade"
+        colorLight = "typeAlienLight"
+        colorBrow = "typeAlienBrows"
+        drawBaseType(im, primaryColor, colorShade, colorLight, colorBrow)
+        imNew.putpixel((8, 12), colorsDict["typeAlienEyes2"])
+        imNew.putpixel((9, 12), colorsDict["black"])
+        imNew.putpixel((14, 12), colorsDict["typeAlienEyes2"])
+        imNew.putpixel((15, 12), colorsDict["black"])
+
+        imNew.putpixel((8, 13), colorsDict["black"])
+        imNew.putpixel((9, 13), colorsDict["typeAlienEyes1"])
+        imNew.putpixel((14, 13), colorsDict["black"])
+        imNew.putpixel((15, 13), colorsDict["typeAlienEyes1"])
     elif decodedType == "Zombie":
         primaryColor = "typeZombie"
         colorShade = "typeZombieShade"

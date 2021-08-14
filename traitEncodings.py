@@ -8,6 +8,7 @@ TRAIT_ENCODINGS = {
         "k": "Black",
         "z": "Zombie",
         "v": "Devil",
+        "a": "Alien",
         "_": "None"
     },
     "body": {
@@ -48,22 +49,29 @@ TRAIT_ENCODINGS = {
     "hat": {
         "p": "Party Hat",
         "b": "Blue Bandana",
+        "n": "Dark Bandana",
         "r": "Red Tophat",
         "g": "Green Tophat",
         "w": "White Tophat",
         "m": "Pink Mohawk",
+        "k": "Purple Mohawk",
         "z": "Wizard Hat",
         "c": "Crown",
         "f": "Fez",
+        "j": "Jester Hat",
+        "o": "Poop",
+        "f": "Flowers",
         "_": "None"
     },
     "eyes": {
         "p": "Pit Vipers",
+        "s": "Solana Shades",
         "c": "Vice Shades",
         "a": "Angry Eyebrows",
         "h": "Heart Eyes",
         "y": "Cyclops",
         "g": "Googley Eyes",
+        "t": "Thug Lyfe",
         "_": "None"
     }
 }

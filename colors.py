@@ -47,6 +47,13 @@ colorsDict = {
     "typeDevilMarks": (136, 0, 21),
     "typeDevilHorns": (136, 0, 21),
 
+    "typeAlien": (201, 251, 251),
+    "typeAlienShade": (156, 225, 225),
+    "typeAlienLight": (156, 225, 225),
+    "typeAlienBrows": (241, 254, 254),
+    "typeAlienEyes1": (156, 225, 225),
+    "typeAlienEyes2": (118, 190, 190),
+
     "blueShade": (0, 142, 204),
     "blue": (0, 162, 232),
     "buckleSilver": (167, 167, 167),
@@ -154,9 +161,22 @@ colorsDict = {
     "blueBandanaOutline": (0, 71, 102),
     "blueBandana": (0, 101, 145),
     "blueBandanaShade": (0, 90, 130),
+    "darkBandanaOutline": (59, 59, 59),
+    "darkBandana": (106, 106, 106),
+    "darkBandanaShade": (82, 82, 82),
+
+    "flowers1": (237, 28, 36),
+    "flowers2": (255, 242, 0),
+    "flowers3": (255, 174, 201),
 
     "pinkMohawk": (255, 174, 201),
     "pinkMohawkShade": (255, 149, 184),
+    "purpleMohawk": (163, 73, 164),
+    "purpleMohawkShade": (137, 61, 137),
+
+    "poop": (185, 122, 87),
+    "poopShade": (149, 92, 62),
+    "poopEdge": (98, 61, 40),
 
     "wizardPurple": (169, 0, 247),
     "wizardPurpleShade": (142, 0, 168),
@@ -187,6 +207,15 @@ colorsDict = {
     "fez": (220, 53, 53),
     "fezShade": (187, 1, 0),
     "fezString": (247, 198, 99),
+
+    "jesterHatGreen": (34, 177, 76),
+    "jesterHatGreenShade": (27, 137, 60),
+    "jesterHatRed": (237, 28, 36),
+    "jesterHatRedShade": (189, 15, 23),
+    "jesterHatBlue": (0, 162, 232),
+    "jesterHatBlueShade": (0, 125, 179),
+    "jesterHatYellow": (255, 242, 0),
+    "jesterHatYellowShade": (206, 196, 0),
     
     "cyclopsYellow": (255, 242, 0),
     "cyclopsYellowShade": (204, 193, 0),
@@ -197,6 +226,13 @@ colorsDict = {
     "pvYellow": (255, 242, 0),
     "pvOrange": (255, 127, 39),
     "pvRed": (237, 28, 36),
+
+    "solanaShades1": (10, 242, 180),
+    "solanaShades2": (44, 208, 184),
+    "solanaShades3": (86, 193, 203),
+    "solanaShades4": (124, 169, 215),
+    "solanaShades5": (169, 140, 229),
+    "solanaShades6": (222, 107, 245),
 
     "viceBrown": (235, 163, 65),
     "viceBrownLight": (244, 206, 155),
