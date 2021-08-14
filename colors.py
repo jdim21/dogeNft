@@ -240,6 +240,10 @@ colorsDict = {
     "heartEyesRed": (237, 28, 36),
     "heartEyesRedShade": (176, 15, 23),
 
+    "glasses": (0, 162, 232, 75),
+    "glassesLight": (0, 162, 232, 75),
+    #"glassesLight": (168, 228, 255, 75),
+
     "solanaBand": [(44, 208, 184),
     (50, 202, 186),
     (56, 197, 189),

@@ -60,7 +60,7 @@ TRAIT_ENCODINGS = {
         "f": "Fez",
         "j": "Jester Hat",
         "o": "Poop",
-        "f": "Flowers",
+        "l": "Flowers",
         "_": "None"
     },
     "eyes": {
@@ -72,6 +72,7 @@ TRAIT_ENCODINGS = {
         "y": "Cyclops",
         "g": "Googley Eyes",
         "t": "Thug Lyfe",
+        "n": "Glasses",
         "_": "None"
     }
 }

@@ -12,7 +12,7 @@ def main():
     traitsDict = buildTraitsDict()
     random.seed(53330)
 
-    makeNewImage(13370, "v___f_")
+    makeNewImage(13370, "v_____b")
 
     dogeId = 1
     while len(traitsDict["type"]) > 0:
@@ -46,8 +46,8 @@ def buildTraitsDict():
         "body": ["p", "w", "l", "c", "i", "k", "o", "s", "n", "y", "_", "_", "_", "_", "_", "_", "_"], 
         "neck": ["b", "r", "g", "c", "y", "o", "e", "s", "u", "d", "f", "n", "p", "_", "_", "_", "_"], 
         "mouth": ["b", "t", "j", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"], 
-        "hat": ["p", "b", "r", "g", "w", "m", "z", "c", "f", "j", "k", "o", "n", "f", "_", "_", "_"],
-        "eyes": ["p", "c", "a", "h", "y", "g", "s", "t", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
+        "hat": ["p", "b", "r", "g", "w", "m", "z", "c", "f", "j", "k", "o", "n", "l", "_", "_", "_"],
+        "eyes": ["p", "c", "a", "h", "y", "g", "s", "t", "n", "n", "n", "n", "n", "n", "n", "_", "_"]
     }
 
     # Check that all entries are equal, else fail
