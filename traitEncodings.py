@@ -20,6 +20,7 @@ TRAIT_ENCODINGS = {
         "i": "Diaper",
         "s": "Black Suit",
         "n": "Navy Suit",
+        "y": "Nyan Doge",
         "_": "None"
     },
     "neck": {
@@ -27,6 +28,15 @@ TRAIT_ENCODINGS = {
         "c": "Red Collar",
         "r": "Purple Bowtie",
         "g": "Green Bowtie",
+        "y": "Yellow Bowtie",
+        "o": "Orange Bowtie",
+        "e": "Emerald Necklace",
+        "s": "Sapphire Necklace",
+        "u": "Ruby Necklace",
+        "d": "Diamond Necklace",
+        "f": "Red Scarf",
+        "n": "Green Scarf",
+        "p": "Cape",
         "_": "None"
     },
     "mouth": {
@@ -42,12 +52,18 @@ TRAIT_ENCODINGS = {
         "g": "Green Tophat",
         "w": "White Tophat",
         "m": "Pink Mohawk",
+        "z": "Wizard Hat",
+        "c": "Crown",
+        "f": "Fez",
         "_": "None"
     },
     "eyes": {
         "p": "Pit Vipers",
         "c": "Vice Shades",
         "a": "Angry Eyebrows",
+        "h": "Heart Eyes",
+        "y": "Cyclops",
+        "g": "Googley Eyes",
         "_": "None"
     }
 }

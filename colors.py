@@ -60,6 +60,27 @@ colorsDict = {
     "greenBowtie": (34, 177, 76),
     "greenBowtieShade": (26, 132, 57),
 
+    "yellowBowtie": (255, 242, 0),
+    "yellowBowtieShade": (217, 206, 0),
+
+    "orangeBowtie": (255, 127, 39),
+    "orangeBowtieShade": (249, 100, 0),
+
+    "necklace": (255, 242, 0),
+    "necklaceShade": (217, 206, 0),
+    "necklaceEmerald": (0, 185, 0),
+    "necklaceRuby": (237, 28, 36),
+    "necklaceSapphire": (0, 0, 255),
+    "necklaceDiamond": (0, 255, 255),
+
+    "scarfRed": (237, 28, 36),
+    "scarfRedShade": (189, 15, 23),
+    "scarfGreen": (37, 193, 47),
+    "scarfGreenShade": (31, 163, 40),
+
+    "cape": (237, 28, 36),
+    "capeShade": (182, 14, 22),
+
     "pink": (255, 149, 184),
     "pinkShade": (255, 98, 149),
 
@@ -87,6 +108,16 @@ colorsDict = {
     "navySuit": (0, 0, 145),
     "navySuitShade": (0, 0, 106),
     "navySuitTie": (254, 95, 250),
+
+    "nyanDogeEdge": (255, 204, 153),
+    "nyanDogeFrosting": (255, 153, 255),
+    "nyanDogeSprinkle": (255, 51, 153),
+    "nyanDogeRed": (237, 28, 36),
+    "nyanDogeOrange": (255, 127, 39),
+    "nyanDogeYellow": (255, 242, 0),
+    "nyanDogeGreen": (0, 206, 0),
+    "nyanDogeBlue": (0, 0, 236),
+    "nyanDogePurple": (163, 73, 164),
 
     "tongue": (255, 174, 201),
     "bone": (223, 223, 223),
@@ -127,6 +158,40 @@ colorsDict = {
     "pinkMohawk": (255, 174, 201),
     "pinkMohawkShade": (255, 149, 184),
 
+    "wizardPurple": (169, 0, 247),
+    "wizardPurpleShade": (142, 0, 168),
+    "wizardStar": (247, 214, 16),
+
+    "crownEdge": (72, 69, 0),
+    "crownShade1": (248, 248, 193),
+    "crownShade2": (244, 222, 119),
+    "crownShade3": (242, 213, 94),
+    "crownShade4": (232, 184, 83),
+    "crownShade5": (237, 158, 47),
+    "crownShadow": (176, 107, 15),
+    "crownDiamond1": (154, 248, 243),
+    "crownDiamond2": (43, 240, 231),
+    "crownRuby1": (242, 73, 73),
+    "crownRuby2": (165, 20, 20),
+    "crownRuby3": (117, 17, 41),
+    "crownEmerald1": (206, 218, 127),
+    "crownEmerald2": (122, 194, 50),
+    "crownEmerald3": (0, 166, 0),
+    "crownSapphire1": (79, 114, 255),
+    "crownSapphire2": (15, 63, 255),
+    "crownSapphire3": (0, 40, 204),
+    "crownQuartz1": (150, 221, 219),
+    "crownQuartz2": (92, 185, 211),
+    "crownQuartz3": (53, 133, 186),
+
+    "fez": (220, 53, 53),
+    "fezShade": (187, 1, 0),
+    "fezString": (247, 198, 99),
+    
+    "cyclopsYellow": (255, 242, 0),
+    "cyclopsYellowShade": (204, 193, 0),
+    "cyclopsRed": (237, 28, 36),
+
     "pvBlue": (0, 162, 232),
     "pvGreen": (181, 230, 29),
     "pvYellow": (255, 242, 0),
@@ -135,6 +200,9 @@ colorsDict = {
 
     "viceBrown": (235, 163, 65),
     "viceBrownLight": (244, 206, 155),
+
+    "heartEyesRed": (237, 28, 36),
+    "heartEyesRedShade": (176, 15, 23),
 
     "solanaBand": [(44, 208, 184),
     (50, 202, 186),
