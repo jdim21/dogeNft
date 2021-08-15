@@ -33,6 +33,7 @@ TRAIT_ENCODINGS = {
     "neck": {
         "b": "Blue Collar",
         "c": "Red Collar",
+        "k": "Pink Collar",
         "r": "Purple Bowtie",
         "g": "Green Bowtie",
         "y": "Yellow Bowtie",
@@ -53,6 +54,7 @@ TRAIT_ENCODINGS = {
         "p": "Pipe",
         "c": "Chicken Bone",
         "d": "Diamond Bone",
+        "v": "Vape",
         "_": "None"
     },
     "hat": {

@@ -339,5 +339,48 @@ def drawMouth(im, trait):
         imNew.putpixel((17, 22), colorsDict["black"])
         imNew.putpixel((18, 22), colorsDict["black"])
         imNew.putpixel((19, 22), colorsDict["black"])
+    
+        
+    elif decodedType == "Vape":
+        imNew.putpixel((22, 13), colorsDict["pipeSmoke"])
+
+        imNew.putpixel((21, 14), colorsDict["pipeSmoke"])
+        imNew.putpixel((22, 14), colorsDict["solanaBand"][14])
+        imNew.putpixel((23, 14), colorsDict["pipeSmoke"])
+
+        imNew.putpixel((21, 15), colorsDict["pipeSmoke"])
+        imNew.putpixel((22, 15), colorsDict["solanaBand"][15])
+        imNew.putpixel((23, 15), colorsDict["pipeSmoke"])
+
+        imNew.putpixel((11, 16), colorsDict["black"])
+        imNew.putpixel((12, 16), colorsDict["vape"])
+        imNew.putpixel((13, 16), colorsDict["black"])
+        imNew.putpixel((22, 16), colorsDict["pipeSmoke"])
+    
+        imNew.putpixel((11, 17), colorsDict["black"])
+        imNew.putpixel((12, 17), colorsDict["black"])
+        imNew.putpixel((13, 17), colorsDict["vape"])
+        imNew.putpixel((14, 17), colorsDict["black"])
+
+        imNew.putpixel((13, 18), colorsDict["black"])
+        imNew.putpixel((14, 18), colorsDict["vape"])
+        imNew.putpixel((15, 18), colorsDict["black"])
+        imNew.putpixel((22, 18), colorsDict["pipeSmoke"])
+
+        imNew.putpixel((14, 19), colorsDict["black"])
+        imNew.putpixel((15, 19), colorsDict["vape"])
+        imNew.putpixel((16, 19), colorsDict["black"])
+        imNew.putpixel((17, 19), colorsDict["black"])
+        imNew.putpixel((18, 19), colorsDict["black"])
+  
+        imNew.putpixel((15, 20), colorsDict["black"])
+        imNew.putpixel((16, 20), colorsDict["vape"])
+        imNew.putpixel((17, 20), colorsDict["vapeLight"])
+        imNew.putpixel((18, 20), colorsDict["black"])
+        imNew.putpixel((21, 20), colorsDict["pipeSmoke"])
+        
+        imNew.putpixel((16, 21), colorsDict["black"])
+        imNew.putpixel((17, 21), colorsDict["black"])
+        imNew.putpixel((18, 21), colorsDict["black"]) 
 
     im.paste(imNew, (0,0), mask=imNew)

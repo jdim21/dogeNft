@@ -66,6 +66,9 @@ colorsDict = {
     "redCollar": (237, 28, 36),
     "redCollarShade": (215, 17, 27),
 
+    "pinkCollar": (255, 128, 255),
+    "pinkCollarShade": (255, 94, 255),
+
     "purpleBowtie": (163, 73, 164),
     "purpleBowtieBlue": (0, 162, 232),
 
@@ -166,6 +169,8 @@ colorsDict = {
     "diamondBone": (0, 255, 255),
     "diamondBoneShade1": (0, 238, 238),
     "diamondBoneShade2": (0, 227, 227),
+    "vape": (195, 195, 195),
+    "vapeLight": (85, 255, 255),
 
     "partyHatRed": (215, 17, 27),
     "partyHatRedShade": (191, 15, 23),
