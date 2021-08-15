@@ -2,8 +2,26 @@ from PIL import Image
 from colors import colorsDict
 from traitEncodings import TRAIT_ENCODINGS
 
-def drawEyes(im, trait):
+def drawEyes(im, trait, type):
     imNew = Image.new('RGBA', (24, 24), (0, 0, 0, 0))
+
+    typePrimaryColor = "typeNormal"
+    if type == "l":
+        typePrimaryColor = "typeLight"
+    elif type == "d":
+        typePrimaryColor = "typeDark"
+    elif type == "b":
+        typePrimaryColor = "typeBrown"
+    elif type == "r":
+        typePrimaryColor = "typeDarkBrown"
+    elif type == "k":
+        typePrimaryColor = "typeBlack"
+    elif type == "z":
+        typePrimaryColor = "typeZombie"
+    elif type == "v":
+        typePrimaryColor = "typeDevil"
+    elif type == "a":
+        typePrimaryColor = "typeAlien"
 
     decodedType = TRAIT_ENCODINGS["eyes"][trait]
     if decodedType == "Pit Vipers":
@@ -53,6 +71,21 @@ def drawEyes(im, trait):
         imNew.putpixel((15, 13), colorsDict["pvYellow"])
         imNew.putpixel((16, 13), colorsDict["pvGreen"])
 
+    elif decodedType == "Happy":
+        imNew.putpixel((9, 11), colorsDict["black"])
+        imNew.putpixel((14, 11), colorsDict["black"])
+
+        imNew.putpixel((8, 12), colorsDict["black"])
+        imNew.putpixel((9, 12), colorsDict[typePrimaryColor])
+        imNew.putpixel((10, 12), colorsDict["black"])
+        imNew.putpixel((13, 12), colorsDict["black"])
+        imNew.putpixel((14, 12), colorsDict[typePrimaryColor])
+        imNew.putpixel((15, 12), colorsDict["black"])
+
+        imNew.putpixel((8, 13), colorsDict[typePrimaryColor])
+        imNew.putpixel((9, 13), colorsDict[typePrimaryColor])
+        imNew.putpixel((14, 13), colorsDict[typePrimaryColor])
+        imNew.putpixel((15, 13), colorsDict[typePrimaryColor])
     elif decodedType == "Solana Shades":
 
         imNew.putpixel((8, 10), colorsDict["black"])

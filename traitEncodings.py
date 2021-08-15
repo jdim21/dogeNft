@@ -77,6 +77,7 @@ TRAIT_ENCODINGS = {
         "g": "Googley Eyes",
         "t": "Thug Lyfe",
         "n": "Glasses",
+        "v": "Happy",
         "_": "None"
     }
 }

@@ -14,7 +14,7 @@ def main():
     traitsDict = buildTraitsDict()
     random.seed(53330)
 
-    makeNewImage(13370, "vt__h_")
+    makeNewImage(13370, "z____v")
 
     dogeId = 1
     while len(traitsDict["type"]) > 0:
@@ -32,7 +32,7 @@ def makeNewImage(iter, traits):
     drawNeck(im, traits[2])
     drawMouth(im, traits[3])
     drawHat(im, traits[4])
-    drawEyes(im, traits[5])
+    drawEyes(im, traits[5], traits[0])
     #smallFileName = "images/" + str(iter) + "." + l1 + l2 + l3 + ".png"
     #im.save(smallFileName, "PNG")
     
@@ -43,9 +43,9 @@ def makeNewImage(iter, traits):
     im2.save(largeFileName, "PNG")
 
 def buildTraitsDict():
-    useManualDict = False
     traitsDict = { "type": [], "body": [], "neck": [], "mouth": [], "hat": [], "eyes": [] }
 
+    useManualDict = False
     if useManualDict:
         traitsDict = {
             "type": ["n", "l", "d", "b", "r", "k", "n", "v", "z", "a", "n", "n", "n", "n", "n", "n", "n"], 
@@ -53,7 +53,7 @@ def buildTraitsDict():
             "neck": ["b", "r", "g", "c", "y", "o", "e", "s", "u", "d", "f", "n", "p", "_", "_", "_", "_"], 
             "mouth": ["b", "t", "j", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"], 
             "hat": ["p", "b", "r", "g", "w", "m", "z", "c", "f", "j", "k", "o", "n", "l", "h", "_", "_"],
-            "eyes": ["p", "c", "a", "h", "y", "g", "s", "t", "n", "n", "n", "n", "n", "n", "n", "_", "_"]
+            "eyes": ["p", "c", "a", "h", "y", "g", "s", "t", "n", "n", "v", "_", "_", "_", "_", "_", "_"]
         }
     else:
         for key in TRAIT_ENCODINGS.keys():

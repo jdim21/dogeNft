@@ -254,6 +254,8 @@ def drawHat(im, trait):
 
         imNew.putpixel((1, 7), colorsDict["black"])
         imNew.putpixel((5, 7), colorsDict["black"])
+        imNew.putpixel((6, 7), colorsDict["black"])
+        imNew.putpixel((17, 7), colorsDict["black"])
         imNew.putpixel((18, 7), colorsDict["black"])
         imNew.putpixel((22, 7), colorsDict["black"])
 
