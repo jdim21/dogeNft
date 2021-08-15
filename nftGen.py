@@ -14,8 +14,8 @@ def main():
     traitsDict = buildTraitsDict()
     random.seed(53330)
 
-    makeNewImage(13370, "no__q_")
-    makeNewImage(13370, "vo__q_")
+    makeNewImage(13370, "s_____")
+    makeNewImage(13371, "s____v")
 
     dogeId = 1
     while len(traitsDict["type"]) > 0:

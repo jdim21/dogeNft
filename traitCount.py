@@ -7,6 +7,7 @@ traitCountDict = {
         "Dark Brown": 300,
         "Black": 70,
         "Zombie": 50,
+        "Skeleton": 75,
         "Devil": 30,
         "Alien": 50,
     },

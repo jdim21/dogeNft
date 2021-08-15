@@ -18,6 +18,8 @@ def drawEyes(im, trait, type):
         typePrimaryColor = "typeBlack"
     elif type == "z":
         typePrimaryColor = "typeZombie"
+    elif type == "s":
+        typePrimaryColor = "typeSkeleton"
     elif type == "v":
         typePrimaryColor = "typeDevil"
     elif type == "a":

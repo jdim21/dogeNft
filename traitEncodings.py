@@ -7,6 +7,7 @@ TRAIT_ENCODINGS = {
         "r": "Dark Brown",
         "k": "Black",
         "z": "Zombie",
+        "s": "Skeleton",
         "v": "Devil",
         "a": "Alien",
         "_": "None"

@@ -54,6 +54,11 @@ colorsDict = {
     "typeAlienEyes1": (156, 225, 225),
     "typeAlienEyes2": (118, 190, 190),
 
+    "typeSkeleton": (195, 195, 195),
+    "typeSkeletonShade": (127, 127, 127),
+    "typeSkeletonLight": (217, 217, 217),
+    "typeSkeletonBrows": (195, 195, 195),
+
     "blueShade": (0, 142, 204),
     "blue": (0, 162, 232),
     "buckleSilver": (167, 167, 167),
