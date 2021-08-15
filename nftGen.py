@@ -7,6 +7,8 @@ from draw.drawNeck import drawNeck
 from draw.drawHat import drawHat
 from draw.drawEyes import drawEyes
 from draw.drawMouth import drawMouth
+from traitCount import traitCountDict
+from traitEncodings import TRAIT_ENCODINGS
 
 def main():
     traitsDict = buildTraitsDict()
@@ -41,14 +43,33 @@ def makeNewImage(iter, traits):
     im2.save(largeFileName, "PNG")
 
 def buildTraitsDict():
-    traitsDict = {
-        "type": ["n", "l", "d", "b", "r", "k", "n", "v", "z", "a", "n", "n", "n", "n", "n", "n", "n"], 
-        "body": ["p", "w", "l", "c", "i", "k", "o", "s", "n", "y", "r", "d", "t", "_", "_", "_", "_"], 
-        "neck": ["b", "r", "g", "c", "y", "o", "e", "s", "u", "d", "f", "n", "p", "_", "_", "_", "_"], 
-        "mouth": ["b", "t", "j", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"], 
-        "hat": ["p", "b", "r", "g", "w", "m", "z", "c", "f", "j", "k", "o", "n", "l", "h", "_", "_"],
-        "eyes": ["p", "c", "a", "h", "y", "g", "s", "t", "n", "n", "n", "n", "n", "n", "n", "_", "_"]
-    }
+    useManualDict = False
+    traitsDict = { "type": [], "body": [], "neck": [], "mouth": [], "hat": [], "eyes": [] }
+
+    if useManualDict:
+        traitsDict = {
+            "type": ["n", "l", "d", "b", "r", "k", "n", "v", "z", "a", "n", "n", "n", "n", "n", "n", "n"], 
+            "body": ["p", "w", "l", "c", "i", "k", "o", "s", "n", "y", "r", "d", "t", "_", "_", "_", "_"], 
+            "neck": ["b", "r", "g", "c", "y", "o", "e", "s", "u", "d", "f", "n", "p", "_", "_", "_", "_"], 
+            "mouth": ["b", "t", "j", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"], 
+            "hat": ["p", "b", "r", "g", "w", "m", "z", "c", "f", "j", "k", "o", "n", "l", "h", "_", "_"],
+            "eyes": ["p", "c", "a", "h", "y", "g", "s", "t", "n", "n", "n", "n", "n", "n", "n", "_", "_"]
+        }
+    else:
+        for key in TRAIT_ENCODINGS.keys():
+            #print("key: " + str(key))
+            for traitEncoding in TRAIT_ENCODINGS[key]:
+                currTrait = TRAIT_ENCODINGS[key][traitEncoding]
+                #print("trait: " + currTrait)
+                if currTrait in traitCountDict[key]:
+                    for i in range(traitCountDict[key][currTrait]):
+                        traitsDict[key].append(traitEncoding)
+
+    for key in traitsDict.keys():
+        while len(traitsDict[key]) < len(traitsDict["type"]):
+            traitsDict[key].append("_")
+
+    #print("builtDict: " + str(traitsDict))
 
     # Check that all entries are equal, else fail
     expectedLen = len(traitsDict["type"])
