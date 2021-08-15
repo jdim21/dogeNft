@@ -16,6 +16,12 @@ def drawShirt(im, color):
     elif color == "white":
         primaryColor = "white"
         shadeColor = "whiteShade"
+    elif color == "purple":
+        primaryColor = "purple"
+        shadeColor = "purpleShade"
+    elif color == "yellow":
+        primaryColor = "polkaDotPlain"
+        shadeColor = "polkaDotShade"
     elif color == "goku":
         primaryColor = "orange"
         shadeColor = "orangeShade"

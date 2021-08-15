@@ -12,7 +12,7 @@ def main():
     traitsDict = buildTraitsDict()
     random.seed(53330)
 
-    makeNewImage(13370, "v_____b")
+    makeNewImage(13370, "vt__h_")
 
     dogeId = 1
     while len(traitsDict["type"]) > 0:
@@ -43,10 +43,10 @@ def makeNewImage(iter, traits):
 def buildTraitsDict():
     traitsDict = {
         "type": ["n", "l", "d", "b", "r", "k", "n", "v", "z", "a", "n", "n", "n", "n", "n", "n", "n"], 
-        "body": ["p", "w", "l", "c", "i", "k", "o", "s", "n", "y", "_", "_", "_", "_", "_", "_", "_"], 
+        "body": ["p", "w", "l", "c", "i", "k", "o", "s", "n", "y", "r", "d", "t", "_", "_", "_", "_"], 
         "neck": ["b", "r", "g", "c", "y", "o", "e", "s", "u", "d", "f", "n", "p", "_", "_", "_", "_"], 
         "mouth": ["b", "t", "j", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"], 
-        "hat": ["p", "b", "r", "g", "w", "m", "z", "c", "f", "j", "k", "o", "n", "l", "_", "_", "_"],
+        "hat": ["p", "b", "r", "g", "w", "m", "z", "c", "f", "j", "k", "o", "n", "l", "h", "_", "_"],
         "eyes": ["p", "c", "a", "h", "y", "g", "s", "t", "n", "n", "n", "n", "n", "n", "n", "_", "_"]
     }
 

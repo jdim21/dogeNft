@@ -91,6 +91,13 @@ colorsDict = {
     "pink": (255, 149, 184),
     "pinkShade": (255, 98, 149),
 
+    "purple": (163, 73, 164),
+    "purpleShade": (134, 60, 134),
+
+    "polkaDotPlain": (255, 242, 0),
+    "polkaDotShade": (198, 188, 0),
+    "polkaDotSpot": (237, 28, 36),
+
     "lime": (181, 230, 29),
     "limeShade": (166, 213, 23),
 
@@ -115,6 +122,10 @@ colorsDict = {
     "navySuit": (0, 0, 145),
     "navySuitShade": (0, 0, 106),
     "navySuitTie": (254, 95, 250),
+
+    "purpleSuit": (214, 41, 180),
+    "purpleSuitShade": (181, 34, 151),
+    "purpleSuitTie": (5, 213, 0),
 
     "nyanDogeEdge": (255, 204, 153),
     "nyanDogeFrosting": (255, 153, 255),
@@ -216,6 +227,11 @@ colorsDict = {
     "jesterHatBlueShade": (0, 125, 179),
     "jesterHatYellow": (255, 242, 0),
     "jesterHatYellowShade": (206, 196, 0),
+
+    "headphonesStrap": (127, 127, 127),
+    "headphonesStrapShade": (103, 103, 103),
+    "headphonesEar": (255, 242, 0),
+    "headphonesEarShade": (198, 188, 0),
     
     "cyclopsYellow": (255, 242, 0),
     "cyclopsYellowShade": (204, 193, 0),

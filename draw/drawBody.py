@@ -14,6 +14,20 @@ def drawBody(im, trait):
         drawShirt(im, "lime")
     elif decodedType == "White Shirt":
         drawShirt(im, "white")
+    elif decodedType == "Purple Shirt":
+        drawShirt(im, "purple")
+    elif decodedType == "Polka Dots":
+        drawShirt(im, "yellow")
+        imNew.putpixel((8, 20), colorsDict["polkaDotSpot"])
+
+        imNew.putpixel((6, 21), colorsDict["polkaDotSpot"])
+        imNew.putpixel((13, 21), colorsDict["polkaDotSpot"])
+
+        imNew.putpixel((8, 22), colorsDict["polkaDotSpot"])
+        imNew.putpixel((10, 22), colorsDict["polkaDotSpot"])
+
+        imNew.putpixel((5, 23), colorsDict["polkaDotSpot"])
+        imNew.putpixel((14, 23), colorsDict["polkaDotSpot"])
     elif decodedType == "Lucky Shirt":
         drawShirt(im, "white")
         imNew.putpixel((6, 20), colorsDict["clover"])
@@ -95,6 +109,11 @@ def drawBody(im, trait):
         primaryColor = colorsDict["navySuit"]
         primaryColorShade = colorsDict["navySuitShade"]
         tieColor = colorsDict["navySuitTie"]
+        drawSuit(imNew, primaryColor, primaryColorShade, tieColor)
+    elif decodedType == "Purple Suit":
+        primaryColor = colorsDict["purpleSuit"]
+        primaryColorShade = colorsDict["purpleSuitShade"]
+        tieColor = colorsDict["purpleSuitTie"]
         drawSuit(imNew, primaryColor, primaryColorShade, tieColor)
     elif decodedType == "Nyan Doge":
         imNew.putpixel((0, 18), colorsDict["nyanDogeRed"])

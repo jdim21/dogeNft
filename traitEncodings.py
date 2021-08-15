@@ -15,12 +15,15 @@ TRAIT_ENCODINGS = {
         "p": "Pink Shirt",
         "l": "Lime Shirt",
         "w": "White Shirt",
+        "r": "Purple Shirt",
+        "d": "Polka Dots",
         "c": "Vice Shirt",
         "k": "Lucky Shirt",
         "o": "Goku Shirt",
         "i": "Diaper",
         "s": "Black Suit",
         "n": "Navy Suit",
+        "t": "Purple Suit",
         "y": "Nyan Doge",
         "_": "None"
     },
@@ -61,6 +64,7 @@ TRAIT_ENCODINGS = {
         "j": "Jester Hat",
         "o": "Poop",
         "l": "Flowers",
+        "h": "Headphones",
         "_": "None"
     },
     "eyes": {
