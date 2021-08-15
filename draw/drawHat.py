@@ -96,6 +96,11 @@ def drawHat(im, trait):
         shadeColor1 = "pinkCap2"
         shadeColor2 = "pinkCap3"
         drawCap(imNew, primaryColor, shadeColor1, shadeColor2)
+    elif decodedType == "Purple Cap":
+        primaryColor = "purpleCap1"
+        shadeColor1 = "purpleCap2"
+        shadeColor2 = "purpleCap3"
+        drawCap(imNew, primaryColor, shadeColor1, shadeColor2)
     elif decodedType == "Flowers":
         imNew.putpixel((4, 4), colorsDict["flowers1"])
         imNew.putpixel((6, 4), colorsDict["flowers1"])
