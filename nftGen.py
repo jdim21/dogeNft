@@ -10,18 +10,44 @@ from draw.drawMouth import drawMouth
 from traitCount import traitCountDict
 from traitEncodings import TRAIT_ENCODINGS
 
+numTraits = 6
+traitAtIndex = ["type", "body", "neck", "mouth", "hat", "eyes"]
+
 def main():
     traitsDict = buildTraitsDict()
     random.seed(53330)
 
-    makeNewImage(13370, "s__v__")
-    makeNewImage(13371, "s____v")
+    #makeNewImage(13370, "s__v__")
 
     dogeId = 1
+    dupesRetry = 0
+    timeoutsTotal = 0
+    allRolls = []
     while len(traitsDict["type"]) > 0:
-        roll = makeTraitsRoll(traitsDict)
-        makeNewImage(dogeId, roll)
-        dogeId = dogeId + 1
+        foundRollOrTimeout = False
+        while not foundRollOrTimeout:
+            roll = makeTraitsRoll(traitsDict)
+            if roll not in allRolls:
+                allRolls.append(roll)
+                foundRollOrTimeout = True
+                makeNewImage(dogeId, roll)
+                dogeId = dogeId + 1
+            else:
+                traitsDict[traitAtIndex[0]].append(roll[0])
+                traitsDict[traitAtIndex[1]].append(roll[1])
+                traitsDict[traitAtIndex[2]].append(roll[2])
+                traitsDict[traitAtIndex[3]].append(roll[3])
+                traitsDict[traitAtIndex[4]].append(roll[4])
+                traitsDict[traitAtIndex[5]].append(roll[5])
+            if dupesRetry >= 100:
+                print("Timed out trying to de-dupe: " + roll)
+                foundRollOrTimeout = True
+                timeoutsTotal = timeoutsTotal + 1
+                if timeoutsTotal >= 100:
+                    print("Too many timeouts. Exiting.")
+                    exit(-1)
+            dupesRetry = dupesRetry + 1
+        dupesRetry = 0
 
 def makeNewImage(iter, traits):
 
@@ -83,10 +109,19 @@ def buildTraitsDict():
 
 def makeTraitsRoll(traitsDict):
     traitStr = ""
-    for trait in ["type", "body", "neck", "mouth", "hat", "eyes"]:
+    traitList = ["type", "body", "neck", "mouth", "hat", "eyes"]
+    for trait in traitList:
         roll = random.choice(traitsDict[trait])
         traitsDict[trait].remove(roll)
         traitStr = traitStr + roll
+    # Hack to undo 9 out of 10 full trait rolls
+    if not "_" in traitStr:
+        ninetyPercentChance = random.randrange(10)
+        if ninetyPercentChance == 9:
+            undoSlot = random.choice([1, 2, 3, 4, 5])
+            traitsDict[traitList[undoSlot]].append(traitStr[undoSlot])
+            traitStr = traitStr[0:undoSlot] + "_" + traitStr[undoSlot+1:numTraits]
+
     return traitStr
 
 # Entry point
