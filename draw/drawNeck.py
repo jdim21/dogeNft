@@ -39,6 +39,26 @@ def drawNeck(im, trait):
         imNew.putpixel((12, 20), colorsDict["pinkCollar"])
         imNew.putpixel((13, 20), colorsDict["pinkCollar"])
         imNew.putpixel((14, 20), colorsDict["pinkCollar"])
+    elif decodedType == "Green Collar":
+        imNew.putpixel((7, 19), colorsDict["greenCollarShade"])
+        imNew.putpixel((8, 19), colorsDict["greenCollar"])
+
+        imNew.putpixel((9, 20), colorsDict["greenCollar"])
+        imNew.putpixel((10, 20), colorsDict["greenCollar"])
+        imNew.putpixel((11, 20), colorsDict["buckleSilver"])
+        imNew.putpixel((12, 20), colorsDict["greenCollar"])
+        imNew.putpixel((13, 20), colorsDict["greenCollar"])
+        imNew.putpixel((14, 20), colorsDict["greenCollar"])
+    elif decodedType == "Purple Collar":
+        imNew.putpixel((7, 19), colorsDict["purpleCollarShade"])
+        imNew.putpixel((8, 19), colorsDict["purpleCollar"])
+
+        imNew.putpixel((9, 20), colorsDict["purpleCollar"])
+        imNew.putpixel((10, 20), colorsDict["purpleCollar"])
+        imNew.putpixel((11, 20), colorsDict["buckleSilver"])
+        imNew.putpixel((12, 20), colorsDict["purpleCollar"])
+        imNew.putpixel((13, 20), colorsDict["purpleCollar"])
+        imNew.putpixel((14, 20), colorsDict["purpleCollar"])
 
     elif decodedType == "Purple Bowtie":
         drawBowtie(imNew, "purpleBowtie", "purpleBowtieBlue")

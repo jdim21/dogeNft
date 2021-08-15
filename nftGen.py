@@ -102,7 +102,7 @@ def buildTraitsDict():
     expectedLen = len(traitsDict["type"])
     for key in traitsDict.keys():
         if len(traitsDict[key]) != expectedLen:
-            print("Error in buildTraitsDict(). " + str(key) + " does not match expectedLen: " + str(expectedLen))
+            print("Error in buildTraitsDict(). " + str(key) + " does not match expectedLen: " + str(expectedLen) + " (" + str(len(traitsDict[key])) +")")
             exit(-1)
 
     return traitsDict
@@ -116,11 +116,18 @@ def makeTraitsRoll(traitsDict):
         traitStr = traitStr + roll
     # Hack to undo 9 out of 10 full trait rolls
     if not "_" in traitStr:
-        ninetyPercentChance = random.randrange(10)
-        if ninetyPercentChance == 9:
-            undoSlot = random.choice([1, 2, 3, 4, 5])
-            traitsDict[traitList[undoSlot]].append(traitStr[undoSlot])
-            traitStr = traitStr[0:undoSlot] + "_" + traitStr[undoSlot+1:numTraits]
+        ninetyEightPercentChance = random.randrange(100)
+        if ninetyEightPercentChance >= 98:
+            # Remove two traits
+            slots = [1, 2, 3, 4, 5]
+            undoSlot1 = random.choice(slots)
+            slots.remove(undoSlot1)
+            traitsDict[traitList[undoSlot1]].append(traitStr[undoSlot1])
+            traitStr = traitStr[0:undoSlot1] + "_" + traitStr[undoSlot1+1:numTraits]
+            undoSlot2 = random.choice(slots)
+            slots.remove(undoSlot2)
+            traitsDict[traitList[undoSlot2]].append(traitStr[undoSlot2])
+            traitStr = traitStr[0:undoSlot2] + "_" + traitStr[undoSlot2+1:numTraits]
 
     return traitStr
 

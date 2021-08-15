@@ -69,6 +69,12 @@ colorsDict = {
     "pinkCollar": (255, 128, 255),
     "pinkCollarShade": (255, 94, 255),
 
+    "greenCollar": (0, 166, 83),
+    "greenCollarShade": (0, 147, 73),
+
+    "purpleCollar": (128, 0, 128),
+    "purpleCollarShade": (79, 0, 79),
+
     "purpleBowtie": (163, 73, 164),
     "purpleBowtieBlue": (0, 162, 232),
 
@@ -216,6 +222,9 @@ colorsDict = {
     "pinkCap1": (255, 91, 145),
     "pinkCap2": (255, 64, 126),
     "pinkCap3": (255, 15, 92),
+    "purpleCap1": (179, 0, 179),
+    "purpleCap2": (153, 0, 153),
+    "purpleCap3": (125, 0, 125),
 
     "beerCanShade": (88,88,88),
     "beerCan": (127,127,127),
