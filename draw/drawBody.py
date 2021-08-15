@@ -14,8 +14,28 @@ def drawBody(im, trait):
         drawShirt(im, "lime")
     elif decodedType == "White Shirt":
         drawShirt(im, "white")
+    elif decodedType == "Dark Shirt":
+        drawShirt(im, "dark")
     elif decodedType == "Purple Shirt":
         drawShirt(im, "purple")
+    elif decodedType == "Striped Shirt":
+        drawShirt(im, "stripes")
+        imNew.putpixel((6, 20), colorsDict["stripes2"])
+        imNew.putpixel((7, 20), colorsDict["stripes2Shade"])
+        imNew.putpixel((8, 20), colorsDict["stripes2"])
+        imNew.putpixel((14, 20), colorsDict["stripes2"])
+
+        imNew.putpixel((4, 22), colorsDict["stripes2"])
+        imNew.putpixel((5, 22), colorsDict["stripes2Shade"])
+        imNew.putpixel((6, 22), colorsDict["stripes2"])
+        imNew.putpixel((7, 22), colorsDict["stripes2"])
+        imNew.putpixel((8, 22), colorsDict["stripes2"])
+        imNew.putpixel((9, 22), colorsDict["stripes2"])
+        imNew.putpixel((10, 22), colorsDict["stripes2"])
+        imNew.putpixel((11, 22), colorsDict["stripes2"])
+        imNew.putpixel((12, 22), colorsDict["stripes2"])
+        imNew.putpixel((13, 22), colorsDict["stripes2"])
+        imNew.putpixel((14, 22), colorsDict["stripes2"])
     elif decodedType == "Polka Dots":
         drawShirt(im, "yellow")
         imNew.putpixel((8, 20), colorsDict["polkaDotSpot"])

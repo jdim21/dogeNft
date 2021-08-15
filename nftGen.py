@@ -14,7 +14,8 @@ def main():
     traitsDict = buildTraitsDict()
     random.seed(53330)
 
-    makeNewImage(13370, "z____v")
+    makeNewImage(13370, "no__q_")
+    makeNewImage(13370, "vo__q_")
 
     dogeId = 1
     while len(traitsDict["type"]) > 0:
@@ -45,7 +46,7 @@ def makeNewImage(iter, traits):
 def buildTraitsDict():
     traitsDict = { "type": [], "body": [], "neck": [], "mouth": [], "hat": [], "eyes": [] }
 
-    useManualDict = False
+    useManualDict = True
     if useManualDict:
         traitsDict = {
             "type": ["n", "l", "d", "b", "r", "k", "n", "v", "z", "a", "n", "n", "n", "n", "n", "n", "n"], 

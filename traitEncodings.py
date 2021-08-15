@@ -16,6 +16,8 @@ TRAIT_ENCODINGS = {
         "l": "Lime Shirt",
         "w": "White Shirt",
         "r": "Purple Shirt",
+        "h": "Dark Shirt",
+        "e": "Striped Shirt",
         "d": "Polka Dots",
         "c": "Vice Shirt",
         "k": "Lucky Shirt",
@@ -47,6 +49,9 @@ TRAIT_ENCODINGS = {
         "b": "Bone",
         "t": "Tongue Out",
         "j": "Joint",
+        "p": "Pipe",
+        "c": "Chicken Bone",
+        "d": "Diamond Bone",
         "_": "None"
     },
     "hat": {
@@ -56,6 +61,7 @@ TRAIT_ENCODINGS = {
         "r": "Red Tophat",
         "g": "Green Tophat",
         "w": "White Tophat",
+        "q": "Dark Tophat",
         "m": "Pink Mohawk",
         "k": "Purple Mohawk",
         "z": "Wizard Hat",
@@ -65,6 +71,15 @@ TRAIT_ENCODINGS = {
         "o": "Poop",
         "l": "Flowers",
         "h": "Headphones",
+        "e": "Green Cap",
+        "x": "Orange Cap",
+        "y": "Red Cap",
+        "u": "Blue Cap",
+        "a": "Pink Cap",
+        "d": "Beer Hat",
+        "a": "Santa Hat",
+        "s": "Sombrero",
+        "i": "Goku Hair",
         "_": "None"
     },
     "eyes": {
