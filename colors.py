@@ -59,6 +59,16 @@ colorsDict = {
     "typeSkeletonLight": (217, 217, 217),
     "typeSkeletonBrows": (195, 195, 195),
 
+    "typeAstronautGlass": (0, 162, 232, 75),
+    "typeAstronautGlassShine": (153, 217, 234, 205),
+    "typeAstronautGlassOverWhite": (149, 187, 202),
+    "typeAstronautRed": (255, 0, 0),
+    "typeAstronautSuitShade": (217, 217, 217),
+
+    "typeDiamondDoge": (0, 255, 255),
+    "typeDiamondDogeShade": (0, 217, 217),
+    "typeDiamondDogeBrows": (125, 255, 255),
+
     "blueShade": (0, 142, 204),
     "blue": (0, 162, 232),
     "buckleSilver": (167, 167, 167),

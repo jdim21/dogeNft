@@ -10,6 +10,8 @@ TRAIT_ENCODINGS = {
         "s": "Skeleton",
         "v": "Devil",
         "a": "Alien",
+        "t": "AstroDoge",
+        "i": "DiamondDoge",
         "_": "None"
     },
     "body": {
