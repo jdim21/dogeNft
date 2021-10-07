@@ -15,20 +15,20 @@ traitAtIndex = ["type", "body", "neck", "mouth", "hat", "eyes"]
 
 def main():
     traitsDict = buildTraitsDict()
-    random.seed(53330)
+    random.seed(533303)
 
-    makeNewImage(5001, "t_____")
-    makeNewImage(5002, "i_____")
-    makeNewImage(5003, "z_____")
-    makeNewImage(5004, "a_____")
-    makeNewImage(5005, "v_____")
-    makeNewImage(5006, "s_____")
-    makeNewImage(5007, "n_____")
-    makeNewImage(5008, "l_____")
-    makeNewImage(5009, "d_____")
-    makeNewImage(5010, "b_____")
-    makeNewImage(5011, "r_____")
-    makeNewImage(5012, "k_____")
+    # makeNewImage(5001, "ni_hr_")
+    # makeNewImage(5002, "i_____")
+    # makeNewImage(5003, "z_____")
+    # makeNewImage(5004, "a_____")
+    # makeNewImage(5005, "v_____")
+    # makeNewImage(5006, "s_____")
+    # makeNewImage(5007, "n_____")
+    # makeNewImage(5008, "l_____")
+    # makeNewImage(5009, "d_____")
+    # makeNewImage(5010, "b_____")
+    # makeNewImage(5011, "r_____")
+    # makeNewImage(5012, "k_____")
 
     dogeId = 1
     dupesRetry = 0
@@ -66,23 +66,22 @@ def makeNewImage(iter, traits):
     im = Image.new('RGBA', (24, 24))
     drawSolanaBackground(im)
     drawType(im, traits[0])
-    drawBody(im, traits[1])
     drawNeck(im, traits[2])
-    drawMouth(im, traits[3])
+    drawBody(im, traits[1])
     drawHat(im, traits[4])
     drawEyes(im, traits[5], traits[0])
+    drawMouth(im, traits[3])
     #smallFileName = "images/" + str(iter) + "." + l1 + l2 + l3 + ".png"
     #im.save(smallFileName, "PNG")
     
     # Make a larger version which looks nicer
     im2 = im.resize((256, 256), resample=Image.NEAREST)
     #im2.show()
-    largeFileName = "images/" + str(iter) + "." + traits + ".256.png"
+    largeFileName = "images\\" + str(iter) + "." + traits + ".256.png"
     im2.save(largeFileName, "PNG")
 
 def buildTraitsDict():
     traitsDict = { "type": [], "body": [], "neck": [], "mouth": [], "hat": [], "eyes": [] }
-    return traitsDict
 
     useManualDict = False
     if useManualDict:

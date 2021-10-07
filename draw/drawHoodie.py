@@ -2,7 +2,7 @@ from PIL import Image
 from colors import colorsDict
 from traitEncodings import TRAIT_ENCODINGS
 
-def drawShirt(im, color):
+def drawHoodie(im, color):
     imNew = Image.new('RGBA', (24, 24), (0, 0, 0, 0))
 
     primaryColor = "pink"
@@ -10,9 +10,12 @@ def drawShirt(im, color):
     if color == "pink":
         primaryColor = "pink"
         shadeColor = "pinkShade"
-    elif color == "bitcoin":
-        primaryColor = "bitcoinShirt"
-        shadeColor = "bitcoinShirtShade"
+    elif color == "blueHoodie":
+        primaryColor = "blueHoodie"
+        shadeColor = "blueHoodieShade"
+    elif color == "grayHoodie":
+        primaryColor = "grayHoodie"
+        shadeColor = "grayHoodieShade"
     elif color == "lime":
         primaryColor = "lime"
         shadeColor = "limeShade"
@@ -37,9 +40,20 @@ def drawShirt(im, color):
     elif color == "vice":
         primaryColor = "vice"
         shadeColor = "viceShade"
+    imNew.putpixel((5, 17), colorsDict["black"])
+
+    imNew.putpixel((4, 18), colorsDict["black"])
+    imNew.putpixel((5, 18), colorsDict[primaryColor])
+    imNew.putpixel((6, 18), colorsDict[primaryColor])
+
+    imNew.putpixel((4, 19), colorsDict["black"])
+    imNew.putpixel((5, 19), colorsDict[primaryColor])
     imNew.putpixel((6, 19), colorsDict["black"])
     imNew.putpixel((7, 19), colorsDict[shadeColor])
-    imNew.putpixel((8, 19), colorsDict[primaryColor])
+    imNew.putpixel((8, 19), colorsDict["hoodieStrings"])
+    imNew.putpixel((15, 19), colorsDict["hoodieStrings"])
+    imNew.putpixel((16, 19), colorsDict[primaryColor])
+    imNew.putpixel((17, 19), colorsDict["black"])
 
     imNew.putpixel((5, 20), colorsDict["black"])
     imNew.putpixel((6, 20), colorsDict[shadeColor])
@@ -49,6 +63,8 @@ def drawShirt(im, color):
     imNew.putpixel((13, 20), colorsDict["black"])
     imNew.putpixel((14, 20), colorsDict[primaryColor])
     imNew.putpixel((15, 20), colorsDict["black"])
+    imNew.putpixel((16, 20), colorsDict[primaryColor])
+    imNew.putpixel((17, 20), colorsDict["black"])
 
     imNew.putpixel((4, 21), colorsDict["black"])
     imNew.putpixel((5, 21), colorsDict[shadeColor])
@@ -62,6 +78,7 @@ def drawShirt(im, color):
     imNew.putpixel((13, 21), colorsDict[primaryColor])
     imNew.putpixel((14, 21), colorsDict[primaryColor])
     imNew.putpixel((15, 21), colorsDict["black"])
+    imNew.putpixel((16, 21), colorsDict["black"])
 
     imNew.putpixel((3, 22), colorsDict["black"])
     imNew.putpixel((4, 22), colorsDict[shadeColor])

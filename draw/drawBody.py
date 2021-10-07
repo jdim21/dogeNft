@@ -2,14 +2,277 @@ from PIL import Image
 from colors import colorsDict
 from traitEncodings import TRAIT_ENCODINGS
 from draw.drawShirt import drawShirt
+from draw.drawCollaredShirt import drawCollaredShirt
 from draw.drawSuit import drawSuit
+from draw.drawHoodie import drawHoodie
 
 def drawBody(im, trait):
     imNew = Image.new('RGBA', (24, 24), (0, 0, 0, 0))
 
     decodedType = TRAIT_ENCODINGS["body"][trait]
-    if decodedType == "Pink Shirt":
+    if decodedType == "SolanaHoodie":
+        drawHoodie(im, "dark")
+        imNew.putpixel((7, 21), colorsDict["solanaBand"][0])
+        imNew.putpixel((8, 21), colorsDict["solanaBand"][0])
+        imNew.putpixel((7, 22), colorsDict["solanaBand"][int(len(colorsDict["solanaBand"])/2)])
+        imNew.putpixel((8, 22), colorsDict["solanaBand"][int(len(colorsDict["solanaBand"])/2)])
+        imNew.putpixel((7, 23), colorsDict["solanaBand"][-1])
+        imNew.putpixel((8, 23), colorsDict["solanaBand"][-1])
+    elif decodedType == "BlueHoodie":
+        drawHoodie(im, "blueHoodie")
+    elif decodedType == "BlackHoodie":
+        drawHoodie(im, "dark")
+    elif decodedType == "GrayHoodie":
+        drawHoodie(im, "grayHoodie")
+    elif decodedType == "RedCollaredShirt":
+        drawCollaredShirt(im, "red")
+    elif decodedType == "SkyBlueCollaredShirt":
+        drawCollaredShirt(im, "skyBlue")
+    elif decodedType == "BlueCollaredShirt":
+        drawCollaredShirt(im, "blue")
+    elif decodedType == "PinkCollaredShirt":
+        drawCollaredShirt(im, "pink")
+    elif decodedType == "YellowCollaredShirt":
+        drawCollaredShirt(im, "yellow")
+    elif decodedType == "GreenCollaredShirt":
+        drawCollaredShirt(im, "green")
+    elif decodedType == "BitcoinShirt":
+        drawShirt(im, "bitcoin")
+        imNew.putpixel((7, 19), colorsDict["bitcoinLabelShade"])
+        imNew.putpixel((8, 19), colorsDict["bitcoinLabel"])
+
+        imNew.putpixel((7, 20), colorsDict["bitcoinLabel"])
+        imNew.putpixel((9, 20), colorsDict["bitcoinLabelShade"])
+
+        imNew.putpixel((7, 21), colorsDict["bitcoinLabel"])
+        imNew.putpixel((8, 21), colorsDict["bitcoinLabel"])
+        imNew.putpixel((14, 21), colorsDict["bitcoinShirtShade"])
+
+        imNew.putpixel((6, 22), colorsDict["bitcoinShirtShade"])
+        imNew.putpixel((7, 22), colorsDict["bitcoinLabel"])
+        imNew.putpixel((9, 22), colorsDict["bitcoinLabel"])
+        imNew.putpixel((12, 22), colorsDict["bitcoinShirtShade"])
+
+        imNew.putpixel((5, 23), colorsDict["bitcoinShirtShade"])
+        imNew.putpixel((7, 23), colorsDict["bitcoinLabel"])
+        imNew.putpixel((8, 23), colorsDict["bitcoinLabel"])
+
+    elif decodedType == "Pink Shirt":
         drawShirt(im, "pink")
+    elif decodedType == "RainbowShirt":
+        imNew.putpixel((7, 19), colorsDict["rainbowBlueShade"])
+        imNew.putpixel((8, 19), colorsDict["rainbowBlue"])
+
+        imNew.putpixel((1, 20), colorsDict["rainbowPurple"])
+        imNew.putpixel((6, 20), colorsDict["rainbowGreenShade"])
+        imNew.putpixel((7, 20), colorsDict["rainbowGreen"])
+        imNew.putpixel((8, 20), colorsDict["rainbowGreen"])
+        imNew.putpixel((9, 20), colorsDict["black"])
+        imNew.putpixel((13, 20), colorsDict["black"])
+        imNew.putpixel((14, 20), colorsDict["rainbowGreen"])
+
+        imNew.putpixel((0, 21), colorsDict["rainbowYellow"])
+        imNew.putpixel((5, 21), colorsDict["rainbowYellowShade"])
+        imNew.putpixel((6, 21), colorsDict["rainbowYellow"])
+        imNew.putpixel((7, 21), colorsDict["rainbowYellow"])
+        imNew.putpixel((8, 21), colorsDict["rainbowYellow"])
+        imNew.putpixel((9, 21), colorsDict["rainbowYellow"])
+        imNew.putpixel((10, 21), colorsDict["black"])
+        imNew.putpixel((11, 21), colorsDict["black"])
+        imNew.putpixel((12, 21), colorsDict["black"])
+        imNew.putpixel((13, 21), colorsDict["rainbowYellow"])
+        imNew.putpixel((14, 21), colorsDict["rainbowYellow"])
+
+        imNew.putpixel((0, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((4, 22), colorsDict["rainbowOrangeShade"])
+        imNew.putpixel((5, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((6, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((7, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((8, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((9, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((10, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((11, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((12, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((13, 22), colorsDict["rainbowOrange"])
+        imNew.putpixel((14, 22), colorsDict["rainbowOrange"])
+
+        imNew.putpixel((0, 23), colorsDict["rainbowRed"])
+        imNew.putpixel((3, 23), colorsDict["rainbowRedShade"])
+        imNew.putpixel((4, 23), colorsDict["rainbowRed"])
+        imNew.putpixel((5, 23), colorsDict["rainbowRed"])
+        imNew.putpixel((6, 23), colorsDict["rainbowRed"])
+        imNew.putpixel((7, 23), colorsDict["rainbowRed"])
+        imNew.putpixel((8, 23), colorsDict["rainbowRed"])
+        imNew.putpixel((9, 23), colorsDict["black"])
+        imNew.putpixel((10, 23), colorsDict["rainbowRedShade"])
+        imNew.putpixel((11, 23), colorsDict["rainbowRedShade"])
+        imNew.putpixel((12, 23), colorsDict["black"])
+        imNew.putpixel((13, 23), colorsDict["rainbowRedShade"])
+        imNew.putpixel((14, 23), colorsDict["rainbowRedShade"])
+    elif decodedType == "Referee":
+        drawShirt(im, "white")
+        imNew.putpixel((7, 19), colorsDict["refereeStripeShade"])
+
+        imNew.putpixel((7, 20), colorsDict["refereeStripe"])
+
+        imNew.putpixel((5, 21), colorsDict["refereeStripeShade"])
+        imNew.putpixel((7, 21), colorsDict["refereeStripe"])
+        imNew.putpixel((9, 21), colorsDict["refereeStripe"])
+        imNew.putpixel((13, 21), colorsDict["refereeStripe"])
+
+        imNew.putpixel((5, 22), colorsDict["refereeStripe"])
+        imNew.putpixel((7, 22), colorsDict["refereeStripe"])
+        imNew.putpixel((9, 22), colorsDict["refereeStripe"])
+        imNew.putpixel((11, 22), colorsDict["refereeStripe"])
+        imNew.putpixel((13, 22), colorsDict["refereeStripe"])
+
+        imNew.putpixel((3, 23), colorsDict["refereeStripeShade"])
+        imNew.putpixel((5, 23), colorsDict["refereeStripe"])
+        imNew.putpixel((7, 23), colorsDict["refereeStripe"])
+        imNew.putpixel((11, 23), colorsDict["refereeStripeShade"])
+        imNew.putpixel((13, 23), colorsDict["refereeStripeShade"])
+    elif decodedType == "ConeOfShame":
+        imNew.putpixel((2, 16), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((3, 16), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((4, 16), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((5, 16), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((18, 16), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((19, 16), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((20, 16), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((21, 16), colorsDict["coneOfShameOutline"])
+
+        imNew.putpixel((3, 17), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((4, 17), colorsDict["coneOfShame"])
+        imNew.putpixel((5, 17), colorsDict["coneOfShame"])
+        imNew.putpixel((6, 17), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((7, 17), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((8, 17), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((15, 17), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((16, 17), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((17, 17), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((18, 17), colorsDict["coneOfShame"])
+        imNew.putpixel((19, 17), colorsDict["coneOfShame"])
+        imNew.putpixel((20, 17), colorsDict["coneOfShameOutline"])
+
+        imNew.putpixel((4, 18), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((5, 18), colorsDict["coneOfShame"])
+        imNew.putpixel((6, 18), colorsDict["coneOfShame"])
+        imNew.putpixel((7, 18), colorsDict["coneOfShame"])
+        imNew.putpixel((8, 18), colorsDict["coneOfShame"])
+        imNew.putpixel((9, 18), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((10, 18), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((11, 18), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((12, 18), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((13, 18), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((14, 18), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((15, 18), colorsDict["coneOfShame"])
+        imNew.putpixel((16, 18), colorsDict["coneOfShame"])
+        imNew.putpixel((17, 18), colorsDict["coneOfShame"])
+        imNew.putpixel((18, 18), colorsDict["coneOfShame"])
+        imNew.putpixel((19, 18), colorsDict["coneOfShameOutline"])
+
+        imNew.putpixel((5, 19), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((6, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((7, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((8, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((9, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((10, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((11, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((12, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((13, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((14, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((15, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((16, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((17, 19), colorsDict["coneOfShame"])
+        imNew.putpixel((18, 19), colorsDict["coneOfShameOutline"])
+
+        imNew.putpixel((6, 20), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((7, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((8, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((9, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((10, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((11, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((12, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((13, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((14, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((15, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((16, 20), colorsDict["coneOfShame"])
+        imNew.putpixel((17, 20), colorsDict["coneOfShameOutline"])
+
+        imNew.putpixel((7, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((8, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((9, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((10, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((11, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((12, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((13, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((14, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((15, 21), colorsDict["coneOfShameOutline"])
+        imNew.putpixel((16, 21), colorsDict["coneOfShameOutline"])
+    elif decodedType == "PikaTail":
+        imNew.putpixel((2, 15), colorsDict["black"])
+
+        imNew.putpixel((1, 16), colorsDict["black"])
+        imNew.putpixel((2, 16), colorsDict["pikaTailShade"])
+        imNew.putpixel((3, 16), colorsDict["black"])
+
+        imNew.putpixel((0, 17), colorsDict["black"])
+        imNew.putpixel((1, 17), colorsDict["pikaTailShade"])
+        imNew.putpixel((2, 17), colorsDict["pikaTail"])
+        imNew.putpixel((3, 17), colorsDict["pikaTail"])
+        imNew.putpixel((4, 17), colorsDict["black"])
+
+        imNew.putpixel((0, 18), colorsDict["pikaTailShade"])
+        imNew.putpixel((1, 18), colorsDict["pikaTail"])
+        imNew.putpixel((2, 18), colorsDict["pikaTail"])
+        imNew.putpixel((3, 18), colorsDict["black"])
+
+        imNew.putpixel((0, 19), colorsDict["pikaTail"])
+        imNew.putpixel((1, 19), colorsDict["black"])
+        imNew.putpixel((2, 19), colorsDict["black"])
+        imNew.putpixel((3, 20), colorsDict["solanaBand"][19])
+
+        imNew.putpixel((0, 20), colorsDict["black"])
+        imNew.putpixel((1, 20), colorsDict["pikaTail"])
+        imNew.putpixel((2, 20), colorsDict["black"])
+        imNew.putpixel((3, 20), colorsDict["solanaBand"][20])
+
+        imNew.putpixel((0, 21), colorsDict["solanaBand"][21])
+        imNew.putpixel((1, 21), colorsDict["black"])
+        imNew.putpixel((2, 21), colorsDict["pikaTail"])
+        imNew.putpixel((3, 21), colorsDict["black"])
+
+        imNew.putpixel((0, 22), colorsDict["black"])
+        imNew.putpixel((1, 22), colorsDict["pikaTail"])
+        imNew.putpixel((2, 22), colorsDict["black"])
+
+        imNew.putpixel((0, 23), colorsDict["pikaTail"])
+        imNew.putpixel((1, 23), colorsDict["black"])
+    elif decodedType == "Tutu":
+        imNew.putpixel((4, 20), colorsDict["tutuOutline"])
+
+        imNew.putpixel((2, 21), colorsDict["tutuOutline"])
+        imNew.putpixel((3, 21), colorsDict["tutuOutline"])
+        imNew.putpixel((4, 21), colorsDict["tutuShade"])
+        imNew.putpixel((5, 21), colorsDict["tutuOutline"])
+
+        imNew.putpixel((1, 22), colorsDict["tutuOutline"])
+        imNew.putpixel((2, 22), colorsDict["tutuShade"])
+        imNew.putpixel((3, 22), colorsDict["tutu"])
+        imNew.putpixel((4, 22), colorsDict["tutuOutline"])
+        imNew.putpixel((5, 22), colorsDict["tutuShade"])
+        imNew.putpixel((6, 22), colorsDict["tutuOutline"])
+        imNew.putpixel((7, 22), colorsDict["tutuOutline"])
+
+        imNew.putpixel((0, 23), colorsDict["tutuOutline"])
+        imNew.putpixel((1, 23), colorsDict["tutuShade"])
+        imNew.putpixel((2, 23), colorsDict["tutu"])
+        imNew.putpixel((3, 23), colorsDict["tutuOutline"])
+        imNew.putpixel((4, 23), colorsDict["tutuShade"])
+        imNew.putpixel((5, 23), colorsDict["tutu"])
+        imNew.putpixel((6, 23), colorsDict["tutuOutline"])
+        imNew.putpixel((7, 23), colorsDict["tutuShade"])
+        imNew.putpixel((8, 23), colorsDict["tutuOutline"])
     elif decodedType == "Lime Shirt":
         drawShirt(im, "lime")
     elif decodedType == "White Shirt":
