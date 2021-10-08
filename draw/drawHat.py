@@ -82,6 +82,47 @@ def drawHat(im, trait, type):
         imNew.putpixel((10, 9), colorsDict["partyHatRed"])
         imNew.putpixel((11, 9), colorsDict["partyHatRed"])
         imNew.putpixel((12, 9), colorsDict["partyHatRed"])
+    elif decodedType == "Ninja":
+
+        imNew.putpixel((1, 6), colorsDict["ninjaDark"])
+        imNew.putpixel((2, 6), colorsDict["ninjaDark"])
+
+        imNew.putpixel((0, 7), colorsDict["ninjaDark"])
+        imNew.putpixel((1, 7), colorsDict["ninjaDark"])
+        imNew.putpixel((2, 7), colorsDict["ninjaDark"])
+        imNew.putpixel((3, 7), colorsDict["ninjaDark"])
+
+        imNew.putpixel((3, 8), colorsDict["ninjaDark"])
+        imNew.putpixel((4, 8), colorsDict["ninjaDark"])
+
+        imNew.putpixel((8, 9), colorsDict["ninja"])
+        imNew.putpixel((9, 9), colorsDict["ninja"])
+        imNew.putpixel((10, 9), colorsDict["ninja"])
+        imNew.putpixel((11, 9), colorsDict["ninja"])
+        imNew.putpixel((12, 9), colorsDict["ninja"])
+        imNew.putpixel((13, 9), colorsDict["ninja"])
+        imNew.putpixel((14, 9), colorsDict["ninja"])
+        imNew.putpixel((15, 9), colorsDict["ninja"])
+
+        imNew.putpixel((3, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((4, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((7, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((8, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((9, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((10, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((11, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((12, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((13, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((14, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((15, 10), colorsDict["ninjaDark"])
+        imNew.putpixel((16, 10), colorsDict["ninjaDark"])
+
+        imNew.putpixel((1, 11), colorsDict["ninjaDark"])
+        imNew.putpixel((2, 11), colorsDict["ninjaDark"])
+        imNew.putpixel((3, 11), colorsDict["ninjaDark"])
+
+        imNew.putpixel((1, 12), colorsDict["ninjaDark"])
+        imNew.putpixel((2, 12), colorsDict["ninjaDark"])
     elif decodedType == "FloppyEar":
         imNew.putpixel((6, 5), colorsDict["solanaBand"][5])
 

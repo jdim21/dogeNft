@@ -36,6 +36,7 @@ traitCountDict = {
         "RastaCollar": 120,
         "FreedomCollar": 115,
         "LeatherCollar": 150,
+        "Collar": 150,
     },
     "mouth": {
         "Bubblegum": 100,
@@ -46,8 +47,8 @@ traitCountDict = {
         "Money": 100,
         "FireBreath": 70,
         "Kazoo": 100,
-        "Ball": 100,
-        "Cookie": 100,
+        "Ball": 110,
+        "Cookie": 110,
         "BeerBottle": 100,
         "Surprised": 90,
         "Blushing": 100,
@@ -72,16 +73,18 @@ traitCountDict = {
         "Plunger": 100,
         "FloppyEar": 80,
         "SilverEarring": 100,
+        "Ninja": 100,
     },
     "eyes":  {
         "GoldenVipers": 35,
         "Monocle": 90,
-        "LaserEyes": 80,
+        "LaserEyes": 60,
         "Solaneyes": 100,
         "ClassyGlasses": 120,
         "Crying": 80,
         "Laughing": 90,
         "Wink": 95,
         "BigShades": 100,
+        "NavyThugLyfe": 100,
     }
 }

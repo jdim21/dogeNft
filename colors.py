@@ -12,6 +12,12 @@ colorsDict = {
     "typeSnowyBrows": (245, 245, 245),
     "typeSnowyLight": (245, 245, 245),
 
+    "navyThugLyfeOutline": (0, 0, 74),
+    "navyThugLyfe": (0, 0, 170),
+
+    "ninja": (237, 28, 36),
+    "ninjaDark": (136, 0, 21),
+
     "typeSolana6": (180, 71, 239),
     "typeSolana7": (180, 71, 239),
     "typeSolana8": (174, 77, 237),

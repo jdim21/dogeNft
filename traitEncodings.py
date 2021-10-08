@@ -82,6 +82,7 @@ TRAIT_ENCODINGS = {
         "l": "Plunger",
         "y": "FloppyEar",
         "v": "SilverEarring",
+        "n": "Ninja",
         "_": "None"
     },
     "eyes": {
@@ -94,6 +95,7 @@ TRAIT_ENCODINGS = {
         "h": "Laughing",
         "w": "Wink",
         "b": "BigShades",
+        "n": "NavyThugLyfe",
         "_": "None"
     }
 }
