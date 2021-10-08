@@ -68,7 +68,7 @@ def makeNewImage(iter, traits):
     drawType(im, traits[0])
     drawNeck(im, traits[2])
     drawBody(im, traits[1])
-    drawHat(im, traits[4])
+    drawHat(im, traits[4], traits[0])
     drawEyes(im, traits[5], traits[0])
     drawMouth(im, traits[3])
     #smallFileName = "images/" + str(iter) + "." + l1 + l2 + l3 + ".png"

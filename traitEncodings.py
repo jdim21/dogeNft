@@ -12,6 +12,8 @@ TRAIT_ENCODINGS = {
         "a": "Alien",
         "t": "AstroDoge",
         "i": "DiamondDoge",
+        "w": "Snowy",
+        "o": "Solana",
         "_": "None"
     },
     "body": {
@@ -19,6 +21,7 @@ TRAIT_ENCODINGS = {
         "l": "BlackHoodie",
         "u": "BlueHoodie",
         "g": "GrayHoodie",
+        "w": "YellowHoodie",
         "r": "RedCollaredShirt",
         "k": "SkyBlueCollaredShirt",
         "b": "BlueCollaredShirt",
@@ -31,6 +34,8 @@ TRAIT_ENCODINGS = {
         "e": "Referee",
         "c": "ConeOfShame",
         "n": "BitcoinShirt",
+        "m": "MuddyPaws",
+        "d": "PlaidShirt",
         "_": "None"
     },
     "neck": {
@@ -75,6 +80,8 @@ TRAIT_ENCODINGS = {
         "m": "SmallCap",
         "d": "RiceHat",
         "l": "Plunger",
+        "y": "FloppyEar",
+        "v": "SilverEarring",
         "_": "None"
     },
     "eyes": {

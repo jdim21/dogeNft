@@ -25,9 +25,9 @@ def drawHoodie(im, color):
     elif color == "purple":
         primaryColor = "purple"
         shadeColor = "purpleShade"
-    elif color == "yellow":
-        primaryColor = "polkaDotPlain"
-        shadeColor = "polkaDotShade"
+    elif color == "yellowHoodie":
+        primaryColor = "yellowCollared"
+        shadeColor = "yellowCollaredShade"
     elif color == "goku":
         primaryColor = "orange"
         shadeColor = "orangeShade"

@@ -5,8 +5,31 @@ from draw.drawBandana import drawBandana
 from draw.drawTophat import drawTophat
 from draw.drawCap import drawCap
 
-def drawHat(im, trait):
+def drawHat(im, trait, type):
     imNew = Image.new('RGBA', (24, 24), (0, 0, 0, 0))
+    typePrimaryColor = "typeNormal"
+    if type == "l":
+        typePrimaryColor = "typeLight"
+    elif type == "d":
+        typePrimaryColor = "typeDark"
+    elif type == "b":
+        typePrimaryColor = "typeBrown"
+    elif type == "r":
+        typePrimaryColor = "typeDarkBrown"
+    elif type == "k":
+        typePrimaryColor = "typeBlack"
+    elif type == "z":
+        typePrimaryColor = "typeZombie"
+    elif type == "s":
+        typePrimaryColor = "typeSkeleton"
+    elif type == "v":
+        typePrimaryColor = "typeDevil"
+    elif type == "a":
+        typePrimaryColor = "typeAlien"
+    elif type == "w":
+        typePrimaryColor = "typeSnowy"
+    elif type == "o":
+        typePrimaryColor = "typeSolana7"
 
     decodedType = TRAIT_ENCODINGS["hat"][trait]
     if decodedType == "Party Hat":
@@ -59,6 +82,32 @@ def drawHat(im, trait):
         imNew.putpixel((10, 9), colorsDict["partyHatRed"])
         imNew.putpixel((11, 9), colorsDict["partyHatRed"])
         imNew.putpixel((12, 9), colorsDict["partyHatRed"])
+    elif decodedType == "FloppyEar":
+        imNew.putpixel((6, 5), colorsDict["solanaBand"][5])
+
+        imNew.putpixel((5, 6), colorsDict["solanaBand"][6])
+        imNew.putpixel((6, 6), colorsDict["black"])
+        imNew.putpixel((7, 6), colorsDict["black"])
+
+        imNew.putpixel((5, 7), colorsDict["black"])
+        imNew.putpixel((6, 7), colorsDict[typePrimaryColor])
+        imNew.putpixel((7, 7), colorsDict[typePrimaryColor])
+
+        imNew.putpixel((4, 8), colorsDict["black"])
+        imNew.putpixel((5, 8), colorsDict[typePrimaryColor])
+        imNew.putpixel((6, 8), colorsDict[typePrimaryColor])
+        imNew.putpixel((7, 8), colorsDict[typePrimaryColor])
+
+        imNew.putpixel((3, 9), colorsDict["black"])
+        imNew.putpixel((4, 9), colorsDict[typePrimaryColor])
+        imNew.putpixel((5, 9), colorsDict[typePrimaryColor])
+        imNew.putpixel((6, 9), colorsDict[typePrimaryColor])
+        imNew.putpixel((7, 9), colorsDict["black"])
+
+        imNew.putpixel((3, 10), colorsDict["black"])
+        imNew.putpixel((4, 10), colorsDict["black"])
+        imNew.putpixel((5, 10), colorsDict["black"])
+        imNew.putpixel((6, 10), colorsDict["black"])
     elif decodedType == "PurpleBow":
         imNew.putpixel((7, 2), colorsDict["purplebowOutline"])
         imNew.putpixel((8, 2), colorsDict["purplebowOutline"])
@@ -2217,7 +2266,9 @@ def drawHat(im, trait):
         imNew.putpixel((19, 12), colorsDict["safariHatString"])
     elif decodedType == "GoldEarring":
         imNew.putpixel((5, 7), colorsDict["halo"])
-    elif decodedType == "Afro":
+    elif decodedType == "SilverEarring":
+        imNew.putpixel((5, 7), colorsDict["silverDogtags"])
+    elif decodedType == "RiceHat":
         imNew.putpixel((12, 0), colorsDict["black"])
 
         imNew.putpixel((11, 1), colorsDict["black"])

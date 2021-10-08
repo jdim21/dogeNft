@@ -24,6 +24,10 @@ def drawEyes(im, trait, type):
         typePrimaryColor = "typeDevil"
     elif type == "a":
         typePrimaryColor = "typeAlien"
+    elif type == "w":
+        typePrimaryColor = "typeSnowy"
+    elif type == "o":
+        typePrimaryColor = "typeSolana12"
 
     decodedType = TRAIT_ENCODINGS["eyes"][trait]
     if decodedType == "Pit Vipers":

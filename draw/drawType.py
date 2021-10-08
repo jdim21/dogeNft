@@ -18,6 +18,153 @@ def drawType(im, trait):
         colorLight = "typeNormalLight"
         colorBrow = "typeNormalBrows"
         drawBaseType(im, primaryColor, colorShade, colorLight, colorBrow)
+    if decodedType == "Solana":
+        primaryColor = "typeNormal"
+        colorShade = "typeNormalShade"
+        colorLight = "typeNormalLight"
+        colorBrow = "typeNormalBrows"
+        drawBaseType(im, primaryColor, colorShade, colorLight, colorBrow)
+        imNew.putpixel((6, 6), colorsDict["typeSolana6"])
+        imNew.putpixel((17, 6), colorsDict["typeSolana6"])
+
+        imNew.putpixel((6, 7), colorsDict["typeSolanaAccent"])
+        imNew.putpixel((7, 7), colorsDict["typeSolana7"])
+        imNew.putpixel((16, 7), colorsDict["typeSolana7"])
+        imNew.putpixel((17, 7), colorsDict["typeSolanaAccent"])
+
+        imNew.putpixel((6, 8), colorsDict["typeSolanaAccent"])
+        imNew.putpixel((7, 8), colorsDict["typeSolana8"])
+        imNew.putpixel((10, 8), colorsDict["typeSolana8"])
+        imNew.putpixel((11, 8), colorsDict["typeSolana8"])
+        imNew.putpixel((12, 8), colorsDict["typeSolana8"])
+        imNew.putpixel((13, 8), colorsDict["typeSolana8"])
+        imNew.putpixel((16, 8), colorsDict["typeSolana8"])
+        imNew.putpixel((17, 8), colorsDict["typeSolanaAccent"])
+
+        imNew.putpixel((6, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((8, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((9, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((10, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((11, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((12, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((13, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((14, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((15, 9), colorsDict["typeSolana9"])
+        imNew.putpixel((17, 9), colorsDict["typeSolana9"])
+
+        imNew.putpixel((7, 10), colorsDict["typeSolana10"])
+        imNew.putpixel((8, 10), colorsDict["typeSolanaAccent"])
+        imNew.putpixel((9, 10), colorsDict["typeSolana10"])
+        imNew.putpixel((10, 10), colorsDict["typeSolana10"])
+        imNew.putpixel((11, 10), colorsDict["typeSolana10"])
+        imNew.putpixel((12, 10), colorsDict["typeSolana10"])
+        imNew.putpixel((13, 10), colorsDict["typeSolana10"])
+        imNew.putpixel((14, 10), colorsDict["typeSolana10"])
+        imNew.putpixel((15, 10), colorsDict["typeSolanaAccent"])
+        imNew.putpixel((16, 10), colorsDict["typeSolana10"])
+
+        imNew.putpixel((6, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((7, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((8, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((9, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((10, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((11, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((12, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((13, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((14, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((15, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((16, 11), colorsDict["typeSolana11"])
+        imNew.putpixel((17, 11), colorsDict["typeSolana11"])
+
+        imNew.putpixel((6, 12), colorsDict["typeSolana12"])
+        imNew.putpixel((7, 12), colorsDict["typeSolana12"])
+        imNew.putpixel((10, 12), colorsDict["typeSolana12"])
+        imNew.putpixel((11, 12), colorsDict["typeSolana12"])
+        imNew.putpixel((12, 12), colorsDict["typeSolana12"])
+        imNew.putpixel((13, 12), colorsDict["typeSolana12"])
+        imNew.putpixel((16, 12), colorsDict["typeSolana12"])
+        imNew.putpixel((17, 12), colorsDict["typeSolana12"])
+
+        imNew.putpixel((7, 13), colorsDict["typeSolana13"])
+        imNew.putpixel((10, 13), colorsDict["typeSolana13"])
+        imNew.putpixel((11, 13), colorsDict["typeSolana13"])
+        imNew.putpixel((12, 13), colorsDict["typeSolana13"])
+        imNew.putpixel((13, 13), colorsDict["typeSolana13"])
+        imNew.putpixel((16, 13), colorsDict["typeSolana13"])
+
+        imNew.putpixel((7, 19), colorsDict["typeSolana19Shade"])
+        imNew.putpixel((8, 19), colorsDict["typeSolana19"])
+
+        imNew.putpixel((1, 20), colorsDict["typeSolanaAccent"])
+        imNew.putpixel((6, 20), colorsDict["typeSolana20Shade"])
+        imNew.putpixel((7, 20), colorsDict["typeSolana20"])
+        imNew.putpixel((8, 20), colorsDict["typeSolana20"])
+        imNew.putpixel((9, 20), colorsDict["typeSolana20"])
+        imNew.putpixel((10, 20), colorsDict["typeSolana20"])
+        imNew.putpixel((11, 20), colorsDict["typeSolana20"])
+        imNew.putpixel((12, 20), colorsDict["typeSolana20"])
+        imNew.putpixel((13, 20), colorsDict["typeSolana20"])
+        imNew.putpixel((14, 20), colorsDict["typeSolana20"])
+
+        imNew.putpixel((0, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((5, 21), colorsDict["typeSolana21Shade"])
+        imNew.putpixel((6, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((7, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((8, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((9, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((10, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((11, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((12, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((13, 21), colorsDict["typeSolana21"])
+        imNew.putpixel((14, 21), colorsDict["typeSolana21"])
+
+        imNew.putpixel((0, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((4, 22), colorsDict["typeSolana22Shade"])
+        imNew.putpixel((5, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((6, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((7, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((8, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((9, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((10, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((11, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((12, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((13, 22), colorsDict["typeSolana22"])
+        imNew.putpixel((14, 22), colorsDict["typeSolana22"])
+
+        imNew.putpixel((0, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((3, 23), colorsDict["typeSolana23Shade"])
+        imNew.putpixel((4, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((5, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((6, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((7, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((8, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((9, 23), colorsDict["black"])
+        imNew.putpixel((10, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((11, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((12, 23), colorsDict["black"])
+        imNew.putpixel((13, 23), colorsDict["typeSolana23"])
+        imNew.putpixel((14, 23), colorsDict["typeSolana23"])
+    elif decodedType == "Snowy":
+        primaryColor = "typeSnowy"
+        colorShade = "typeSnowyShade"
+        colorLight = "typeSnowyLight"
+        colorBrow = "typeSnowyBrows"
+        imNew.putpixel((1, 18), colorsDict["black"])
+        imNew.putpixel((2, 18), colorsDict["black"])
+
+        imNew.putpixel((0, 19), colorsDict["black"])
+        imNew.putpixel((1, 19), colorsDict["typeSnowy"])
+        imNew.putpixel((2, 19), colorsDict["typeSnowyShade"])
+        imNew.putpixel((3, 19), colorsDict["black"])
+
+        imNew.putpixel((0, 20), colorsDict["black"])
+        imNew.putpixel((1, 20), colorsDict["typeSnowyShade"])
+        imNew.putpixel((2, 20), colorsDict["typeSnowy"])
+        imNew.putpixel((3, 20), colorsDict["black"])
+
+        imNew.putpixel((1, 21), colorsDict["black"])
+        imNew.putpixel((2, 21), colorsDict["black"])
+        drawBaseType(im, primaryColor, colorShade, colorLight, colorBrow)
     elif decodedType == "Light":
         primaryColor = "typeLight"
         colorShade = "typeLightShade"

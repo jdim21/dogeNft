@@ -20,6 +20,8 @@ def drawBody(im, trait):
         imNew.putpixel((8, 23), colorsDict["solanaBand"][-1])
     elif decodedType == "BlueHoodie":
         drawHoodie(im, "blueHoodie")
+    elif decodedType == "YellowHoodie":
+        drawHoodie(im, "yellowHoodie")
     elif decodedType == "BlackHoodie":
         drawHoodie(im, "dark")
     elif decodedType == "GrayHoodie":
@@ -36,6 +38,56 @@ def drawBody(im, trait):
         drawCollaredShirt(im, "yellow")
     elif decodedType == "GreenCollaredShirt":
         drawCollaredShirt(im, "green")
+    elif decodedType == "MuddyPaws":
+        imNew.putpixel((10, 23), colorsDict["muddyPaws"])
+        imNew.putpixel((11, 23), colorsDict["muddyPaws"])
+        imNew.putpixel((13, 23), colorsDict["muddyPaws"])
+        imNew.putpixel((14, 23), colorsDict["muddyPaws"])
+    elif decodedType == "PlaidShirt":
+        imNew.putpixel((7, 19), colorsDict["plaidRedShade"])
+        imNew.putpixel((8, 19), colorsDict["plaidBlack"])
+
+        imNew.putpixel((6, 20), colorsDict["plaidRedShade"])
+        imNew.putpixel((7, 20), colorsDict["plaidBlack"])
+        imNew.putpixel((8, 20), colorsDict["plaidRed"])
+        imNew.putpixel((9, 20), colorsDict["black"])
+        imNew.putpixel((13, 20), colorsDict["black"])
+        imNew.putpixel((14, 20), colorsDict["plaidRed"])
+
+        imNew.putpixel((5, 21), colorsDict["plaidRedShade"])
+        imNew.putpixel((6, 21), colorsDict["plaidBlack"])
+        imNew.putpixel((7, 21), colorsDict["plaidRed"])
+        imNew.putpixel((8, 21), colorsDict["plaidBlack"])
+        imNew.putpixel((9, 21), colorsDict["plaidRed"])
+        imNew.putpixel((10, 21), colorsDict["black"])
+        imNew.putpixel((12, 21), colorsDict["black"])
+        imNew.putpixel((13, 21), colorsDict["plaidRed"])
+        imNew.putpixel((14, 21), colorsDict["plaidBlack"])
+
+        imNew.putpixel((4, 22), colorsDict["plaidRedShade"])
+        imNew.putpixel((5, 22), colorsDict["plaidBlack"])
+        imNew.putpixel((6, 22), colorsDict["plaidRed"])
+        imNew.putpixel((7, 22), colorsDict["plaidBlack"])
+        imNew.putpixel((8, 22), colorsDict["plaidRed"])
+        imNew.putpixel((9, 22), colorsDict["plaidBlack"])
+        imNew.putpixel((10, 22), colorsDict["plaidRed"])
+        imNew.putpixel((11, 22), colorsDict["black"])
+        imNew.putpixel((12, 22), colorsDict["plaidRed"])
+        imNew.putpixel((13, 22), colorsDict["plaidBlack"])
+        imNew.putpixel((14, 22), colorsDict["plaidRed"])
+
+        imNew.putpixel((3, 23), colorsDict["plaidRedShade"])
+        imNew.putpixel((4, 23), colorsDict["plaidBlack"])
+        imNew.putpixel((5, 23), colorsDict["plaidRed"])
+        imNew.putpixel((6, 23), colorsDict["plaidBlack"])
+        imNew.putpixel((7, 23), colorsDict["plaidRed"])
+        imNew.putpixel((8, 23), colorsDict["plaidBlack"])
+        imNew.putpixel((9, 23), colorsDict["black"])
+        imNew.putpixel((10, 23), colorsDict["plaidBlackShade"])
+        imNew.putpixel((11, 23), colorsDict["plaidRedShade"])
+        imNew.putpixel((12, 23), colorsDict["black"])
+        imNew.putpixel((13, 23), colorsDict["plaidRedShade"])
+        imNew.putpixel((14, 23), colorsDict["plaidBlackShade"])
     elif decodedType == "BitcoinShirt":
         drawShirt(im, "bitcoin")
         imNew.putpixel((7, 19), colorsDict["bitcoinLabelShade"])
