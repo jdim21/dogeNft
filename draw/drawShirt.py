@@ -10,6 +10,9 @@ def drawShirt(im, color):
     if color == "pink":
         primaryColor = "pink"
         shadeColor = "pinkShade"
+    elif color == "tutu":
+        primaryColor = "tutu"
+        shadeColor = "tutuShade"
     elif color == "bitcoin":
         primaryColor = "bitcoinShirt"
         shadeColor = "bitcoinShirtShade"
@@ -34,6 +37,9 @@ def drawShirt(im, color):
     elif color == "stripes":
         primaryColor = "stripes1"
         shadeColor = "stripes1Shade"
+    elif color == "stripes2":
+        primaryColor = "stripes21"
+        shadeColor = "stripes21Shade"
     elif color == "vice":
         primaryColor = "vice"
         shadeColor = "viceShade"

@@ -20,13 +20,25 @@ def drawNeck(im, trait):
         imNew.putpixel((13, 20), colorsDict["blue"])
         imNew.putpixel((14, 20), colorsDict["blue"])
     elif decodedType == "GoldenCollar":
+        # imNew.putpixel((7, 19), colorsDict["goldDogtagsShade"])
+        # imNew.putpixel((8, 19), colorsDict["goldDogtags"])
+
+        # imNew.putpixel((9, 20), colorsDict["goldDogtags"])
         imNew.putpixel((10, 20), colorsDict["goldDogtagsShade"])
         imNew.putpixel((11, 20), colorsDict["goldDogtags"])
         imNew.putpixel((12, 20), colorsDict["goldDogtagsShade"])
+        # imNew.putpixel((13, 20), colorsDict["goldDogtags"])
+        # imNew.putpixel((14, 20), colorsDict["goldDogtags"])
     elif decodedType == "RastaCollar":
+        # imNew.putpixel((7, 19), colorsDict["bronzeDogtagsShade"])
+        # imNew.putpixel((8, 19), colorsDict["bronzeDogtagsShade"])
+
+        # imNew.putpixel((9, 20), colorsDict["bronzeDogtagsShade"])
         imNew.putpixel((10, 20), colorsDict["redDogtags"])
         imNew.putpixel((11, 20), colorsDict["yellowDogtags"])
         imNew.putpixel((12, 20), colorsDict["greenDogtags"])
+        # imNew.putpixel((13, 20), colorsDict["bronzeDogtagsShade"])
+        # imNew.putpixel((14, 20), colorsDict["bronzeDogtagsShade"])
     elif decodedType == "FreedomCollar":
         imNew.putpixel((10, 20), colorsDict["redDogtags"])
         imNew.putpixel((11, 20), colorsDict["white"])
@@ -36,9 +48,9 @@ def drawNeck(im, trait):
         imNew.putpixel((11, 20), colorsDict["silverDogtags"])
         imNew.putpixel((12, 20), colorsDict["silverDogtagsShade"])
     elif decodedType == "LeatherCollar":
-        imNew.putpixel((10, 20), colorsDict["bronzeDogtagsShade"])
-        imNew.putpixel((11, 20), colorsDict["bronzeDogtags"])
-        imNew.putpixel((12, 20), colorsDict["bronzeDogtagsShade"])
+        imNew.putpixel((10, 20), colorsDict["bronzeDogtags"])
+        imNew.putpixel((11, 20), colorsDict["silverDogtagsShade"])
+        imNew.putpixel((12, 20), colorsDict["bronzeDogtags"])
 
     elif decodedType == "Red Collar":
         imNew.putpixel((7, 19), colorsDict["redCollarShade"])

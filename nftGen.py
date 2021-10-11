@@ -12,10 +12,11 @@ from traitEncodings import TRAIT_ENCODINGS
 
 numTraits = 6
 traitAtIndex = ["type", "body", "neck", "mouth", "hat", "eyes"]
+hatsToDrawSecond = ["s", "g"]
 
 def main():
     traitsDict = buildTraitsDict()
-    random.seed(533303)
+    random.seed(533341)
 
     # makeNewImage(5001, "ni_hr_")
     # makeNewImage(5002, "i_____")
@@ -68,8 +69,12 @@ def makeNewImage(iter, traits):
     drawType(im, traits[0])
     drawNeck(im, traits[2])
     drawBody(im, traits[1])
-    drawHat(im, traits[4], traits[0])
-    drawEyes(im, traits[5], traits[0])
+    if (traits[4] in hatsToDrawSecond):
+        drawEyes(im, traits[5], traits[0])
+        drawHat(im, traits[4], traits[0])
+    else:
+        drawHat(im, traits[4], traits[0])
+        drawEyes(im, traits[5], traits[0])
     drawMouth(im, traits[3])
     #smallFileName = "images/" + str(iter) + "." + l1 + l2 + l3 + ".png"
     #im.save(smallFileName, "PNG")

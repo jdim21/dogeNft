@@ -22,12 +22,14 @@ TRAIT_ENCODINGS = {
         "u": "BlueHoodie",
         "g": "GrayHoodie",
         "w": "YellowHoodie",
-        "r": "RedCollaredShirt",
-        "k": "SkyBlueCollaredShirt",
-        "b": "BlueCollaredShirt",
-        "i": "PinkCollaredShirt",
-        "y": "YellowCollaredShirt",
-        "a": "GreenCollaredShirt",
+        "f": "OrangeHoodie",
+        "x": "PurpleHoodie",
+        "r": "RedCollared",
+        "k": "LightBlueCollared",
+        "b": "BlueCollared",
+        "i": "PinkCollared",
+        "y": "YellowCollared",
+        "a": "GreenCollared",
         "o": "RainbowShirt",
         "p": "PikaTail",
         "t": "Tutu",
@@ -36,6 +38,11 @@ TRAIT_ENCODINGS = {
         "n": "BitcoinShirt",
         "m": "MuddyPaws",
         "d": "PlaidShirt",
+        "h": "RedAndBlue",
+        "j": "Cope",
+        "v": "VelvetRobe",
+        "q": "Hawaiian",
+        "z": "BathRobe",
         "_": "None"
     },
     "neck": {
@@ -60,6 +67,8 @@ TRAIT_ENCODINGS = {
         "e": "BeerBottle",
         "s": "Surprised",
         "h": "Blushing",
+        "r": "Rose",
+        "t": "Cigarette",
         "_": "None"
     },
     "hat": {
@@ -83,6 +92,9 @@ TRAIT_ENCODINGS = {
         "y": "FloppyEar",
         "v": "SilverEarring",
         "n": "Ninja",
+        "g": "Musketeer",
+        "j": "ClownHair",
+        "k": "Chef",
         "_": "None"
     },
     "eyes": {
@@ -91,11 +103,15 @@ TRAIT_ENCODINGS = {
         "l": "LaserEyes",
         "e": "Solaneyes",
         "c": "ClassyGlasses",
-        "y": "Crying",
+        "y": "Tear",
         "h": "Laughing",
         "w": "Wink",
         "b": "BigShades",
         "n": "NavyThugLyfe",
+        "o": "Neo",
+        "x": "MatrixGlasses",
+        "p": "HippieGlasses",
+        "d": "DiamondVipers",
         "_": "None"
     }
 }

@@ -38,6 +38,31 @@ colorsDict = {
     "typeSolana23Shade": (40, 189, 167),
     "typeSolanaAccent": (248, 63, 243),
 
+    "roseOutline": (196, 15, 24),
+    "rose": (237, 28, 36),
+    "roseLight": (255, 174, 201),
+    "roseStem": (29, 150, 65),
+
+    "clownHairOutline": (136, 0, 21),
+    "clownHairRed": (237, 28, 36),
+    "clownHairRedShade": (207, 16, 26),
+    "clownHairOrange": (255, 127, 39),
+    "clownHairOrangeShade": (232, 92, 0),
+    "clownHairYellow": (255, 242, 0),
+    "clownHairGreen": (34, 177, 76),
+    "clownHairGreenLight": (45, 215, 96),
+    "clownHairBlue": (28, 28, 240),
+    "clownHairBlueLight": (68, 68, 242),
+    "clownHairPurple": (163, 73, 164),
+    "clownHairPurpleLight": (196, 121, 196),
+
+    "musketeerHat": (100, 100, 100),
+    "musketeerHatShade": (83, 83, 83),
+    "musketeerHatLight": (126, 126, 126),
+    "musketeerHatFeather": (176, 47, 191),
+    "musketeerHatFeatherShade": (146, 38, 157),
+    "musketeerHatBrim": (58, 58, 58),
+
     "plaidRed": (237, 28, 36),
     "plaidRedShade": (199, 16, 26),
     "plaidBlack": (65, 65, 65),
@@ -177,6 +202,17 @@ colorsDict = {
     "beanieYellow": (255, 242, 0),
     "beanieGreen": (34, 177, 76),
 
+    "diamondVipers1": (223, 255, 255),
+    "diamondVipers2": (183, 255, 255),
+    "diamondVipers3": (140, 255, 255),
+    "diamondVipers4": (74, 255, 255),
+    "diamondVipers5": (6, 255, 255),
+    "diamondVipers6": (0, 213, 213),
+
+    "cigaretteYellow": (255, 242, 0),
+    "cigaretteOrange": (255, 102, 0),
+    "cigarette": (192, 192, 192),
+
     "tutuOutline": (204, 0, 113),
     "tutu": (225, 128, 169),
     "tutuShade": (255, 98, 149),
@@ -191,6 +227,23 @@ colorsDict = {
     "kazooTop": (63, 72, 204),
     "kazooBottom": (89, 99, 210),
     "kazooWhistle": (255, 127, 39),
+
+    "orangeHoodie": (244, 122, 0),
+    "orangeHoodieShade": (210, 105, 0),
+    "purpleHoodie": (138, 11, 215),
+    "purpleHoodieShade": (113, 9, 174),
+
+    "chefHat": (244, 244, 244),
+    "chefHatShade": (219, 219, 219),
+    "chefHatBrim": (9, 27, 251),
+    "chefHatBrimShade": (4, 20, 213),
+
+    "neo6": (0, 106, 0),
+    "neo5": (0, 149, 0),
+    "neo4": (0, 198, 0),
+    "neo3": (0, 249, 0),
+    "neo2": (91, 255, 91),
+    "neo1": (170, 255, 170),
 
     "fastFoodHatOutline": (201, 16, 26),
     "fastFoodHatInner": (237, 28, 36),
@@ -212,8 +265,8 @@ colorsDict = {
     "floppyHat": (237, 28, 36),
     "floppyHatShade": (182, 14, 22),
 
-    "cookieOutline": (172, 106, 70),
-    "cookie": (200, 149, 121),
+    "cookieOutline": (178, 127, 48),
+    "cookie": (250, 227, 160),
     "cookieChip": (86, 53, 35),
 
     "rainbowRed": (237, 28, 36),
@@ -227,6 +280,10 @@ colorsDict = {
     "rainbowBlue": (0, 0, 236),
     "rainbowBlueShade": (0, 0, 179),
     "rainbowPurple": (163, 73, 164),
+
+    "bathRobeAccent": (111, 239, 253),
+    "bathRobeAccentShade": (2, 167, 185),
+    "bathRobeShade": (207, 207, 207),
 
     "saiyanHair": (215, 204, 0),
     "saiyanHairShade": (255, 242, 0),
@@ -261,10 +318,41 @@ colorsDict = {
     "purplebow": (128, 0, 255),
     "purplebowShine": (160, 66, 255),
 
+    "hawaiianShirt": (255, 242, 0),
+    "hawaiianShirtShade": (213, 202, 0),
+    "hawaiianShirtBlue": (15, 255, 255),
+    "hawaiianShirtBlueShade": (0, 196, 196),
+    "hawaiianShirtPurple": (237, 69, 207),
+    "hawaiianShirtPurpleShade": (176, 17, 149),
+    "hawaiianShirtRed": (237, 28, 36),
+    "hawaiianShirtRedShade": (213, 17, 27),
+    "hawaiianShirtGreen": (31, 204, 21),
+    "hawaiianShirtOrange": (255, 158, 28),
+
+    "twig": (116, 71, 48),
+    "twigLeaf1": (30, 155, 67),
+    "twigLeaf2": (116, 227, 15),
+
+    "hippieGlassesOutline": (138, 132, 0),
+    "hippieGlasses": (135, 17, 198, 100),
+
+    "athleticBlack": (46, 46, 46),
+    "athleticBlackShade": (29, 29, 29),
+    "athleticWhiteShade": (195, 195, 195),
+
+    "matrixGlasses": (0, 0, 0, 240),
+    "matrixGlassesShine": (127, 127, 127, 240),
+
+    "velvetRobe": (223, 0, 34),
+    "velvetRobeAccent": (136, 0, 21),
+    "velvetRobeShade": (106, 0, 16),
+    "velvetRobeBelt": (135, 17, 198),
+    "velvetRobeBeltShade": (109, 14, 160),
+
     "typeNormal": (224, 167, 33),
     "typeNormalShade": (185, 137, 26),
     "typeNormalLight": (255, 224, 163),
-    "typeNormalBrows": (255, 238, 202),
+    "typeNormalBrows": (255, 233, 187),
 
     "typeLight": (255, 211, 121),
     "typeLightShade": (255, 191, 60),
@@ -397,6 +485,11 @@ colorsDict = {
     "stripes1Shade": (213, 0, 106),
     "stripes2": (128, 0, 255),
     "stripes2Shade": (103, 0, 206),
+
+    "stripes21": (13, 19, 255),
+    "stripes21Shade": (0, 5, 198),
+    "stripes22": (255, 0, 0),
+    "stripes22Shade": (220, 0, 0),
 
     "orange": (255, 127, 39),
     "orangeShade": (251, 100, 0),

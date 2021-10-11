@@ -16,6 +16,12 @@ def drawHoodie(im, color):
     elif color == "grayHoodie":
         primaryColor = "grayHoodie"
         shadeColor = "grayHoodieShade"
+    elif color == "orangeHoodie":
+        primaryColor = "orangeHoodie"
+        shadeColor = "orangeHoodieShade"
+    elif color == "purpleHoodie":
+        primaryColor = "purpleHoodie"
+        shadeColor = "purpleHoodieShade"
     elif color == "lime":
         primaryColor = "lime"
         shadeColor = "limeShade"

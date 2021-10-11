@@ -96,6 +96,49 @@ def drawMouth(im, trait):
         imNew.putpixel((14, 19), colorsDict["baconOuter"])
         imNew.putpixel((18, 19), colorsDict["baconOuter"])
         imNew.putpixel((19, 19), colorsDict["baconOuter"])
+    elif decodedType == "Cigarette":
+        imNew.putpixel((22, 11), colorsDict["cigarette"])
+        imNew.putpixel((21, 12), colorsDict["cigarette"])
+        imNew.putpixel((22, 13), colorsDict["cigarette"])
+        imNew.putpixel((21, 14), colorsDict["cigarette"])
+
+        imNew.putpixel((11, 16), colorsDict["cigaretteYellow"])
+        imNew.putpixel((12, 16), colorsDict["cigaretteYellow"])
+        imNew.putpixel((13, 16), colorsDict["cigaretteYellow"])
+        imNew.putpixel((14, 16), colorsDict["cigarette"])
+        imNew.putpixel((15, 16), colorsDict["cigarette"])
+        imNew.putpixel((16, 16), colorsDict["cigarette"])
+        imNew.putpixel((17, 16), colorsDict["cigarette"])
+        imNew.putpixel((18, 16), colorsDict["cigarette"])
+        imNew.putpixel((19, 16), colorsDict["cigarette"])
+        imNew.putpixel((20, 16), colorsDict["cigaretteOrange"])
+    elif decodedType == "Twig":
+        imNew.putpixel((21, 14), colorsDict["twigLeaf1"])
+
+        imNew.putpixel((14, 15), colorsDict["twig"])
+        imNew.putpixel((15, 15), colorsDict["twig"])
+        imNew.putpixel((19, 15), colorsDict["twig"])
+        imNew.putpixel((20, 15), colorsDict["twig"])
+
+        imNew.putpixel((11, 16), colorsDict["twig"])
+        imNew.putpixel((12, 16), colorsDict["twig"])
+        imNew.putpixel((13, 16), colorsDict["twig"])
+        imNew.putpixel((16, 16), colorsDict["twig"])
+        imNew.putpixel((17, 16), colorsDict["twig"])
+        imNew.putpixel((18, 16), colorsDict["twig"])
+        imNew.putpixel((21, 16), colorsDict["twig"])
+
+        imNew.putpixel((17, 17), colorsDict["twigLeaf1"])
+        imNew.putpixel((20, 17), colorsDict["twigLeaf2"])
+        imNew.putpixel((22, 17), colorsDict["twigLeaf1"])
+
+    elif decodedType == "Cookie":
+        imNew.putpixel((13, 14), colorsDict["cookieOutline"])
+        imNew.putpixel((14, 14), colorsDict["cookieOutline"])
+        imNew.putpixel((15, 14), colorsDict["cookieOutline"])
+
+
+        imNew.putpixel((16, 17), colorsDict["twigLeaf1"])
     elif decodedType == "Cookie":
         imNew.putpixel((13, 14), colorsDict["cookieOutline"])
         imNew.putpixel((14, 14), colorsDict["cookieOutline"])
@@ -224,6 +267,37 @@ def drawMouth(im, trait):
         imNew.putpixel((20, 17), colorsDict["beerBottleLabelGreen"])
         imNew.putpixel((21, 17), colorsDict["beerBottleLabelGreen"])
         imNew.putpixel((22, 17), colorsDict["beerBottleShade"])
+    elif decodedType == "Rose":
+        imNew.putpixel((17, 14), colorsDict["roseOutline"])
+        imNew.putpixel((18, 14), colorsDict["roseOutline"])
+        imNew.putpixel((19, 14), colorsDict["roseOutline"])
+
+        imNew.putpixel((16, 15), colorsDict["roseOutline"])
+        imNew.putpixel((17, 15), colorsDict["roseOutline"])
+        imNew.putpixel((18, 15), colorsDict["rose"])
+        imNew.putpixel((19, 15), colorsDict["roseLight"])
+
+        imNew.putpixel((8, 16), colorsDict["roseStem"])
+        imNew.putpixel((9, 16), colorsDict["roseStem"])
+        imNew.putpixel((10, 16), colorsDict["roseStem"])
+        imNew.putpixel((11, 16), colorsDict["roseStem"])
+        imNew.putpixel((12, 16), colorsDict["roseStem"])
+        imNew.putpixel((13, 16), colorsDict["roseStem"])
+        imNew.putpixel((14, 16), colorsDict["roseStem"])
+        imNew.putpixel((15, 16), colorsDict["roseStem"])
+        imNew.putpixel((16, 16), colorsDict["roseOutline"])
+        imNew.putpixel((17, 16), colorsDict["rose"])
+        imNew.putpixel((18, 16), colorsDict["roseLight"])
+        imNew.putpixel((19, 16), colorsDict["rose"])
+
+        imNew.putpixel((16, 17), colorsDict["roseOutline"])
+        imNew.putpixel((17, 17), colorsDict["roseOutline"])
+        imNew.putpixel((18, 17), colorsDict["rose"])
+        imNew.putpixel((19, 17), colorsDict["roseLight"])
+
+        imNew.putpixel((17, 18), colorsDict["roseOutline"])
+        imNew.putpixel((18, 18), colorsDict["roseOutline"])
+        imNew.putpixel((19, 18), colorsDict["roseOutline"])
     elif decodedType == "Blushing":
         imNew.putpixel((7, 15), colorsDict["blushing"])
         imNew.putpixel((16, 15), colorsDict["blushing"])
